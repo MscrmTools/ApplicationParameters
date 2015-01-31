@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{014ABA28-C6B7-49E0-B127-0F0D269E2ED3}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>McTools.Parameters.Solutions</RootNamespace>
+    <AssemblyName>McTools.Parameters.Solutions</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Managed\Entities\mctools_parametercategory\Entity.xml" />
+    <Content Include="Managed\Entities\mctools_parametercategory\FormXml\main\{206c6df3-1753-42d2-b224-60ed880b339b}.xml" />
+    <Content Include="Managed\Entities\mctools_parametercategory\FormXml\mobile\{3fb36b49-1563-48c4-921d-42e204ac774f}.xml" />
+    <Content Include="Managed\Entities\mctools_parametercategory\RibbonDiff.xml" />
+    <Content Include="Managed\Entities\mctools_parametercategory\SavedQueries\{064dc7fb-b051-4702-9ec0-b268bb458b2c}.xml" />
+    <Content Include="Managed\Entities\mctools_parametercategory\SavedQueries\{2cf75fc4-1875-4369-b5f4-fb648410ef89}.xml" />
+    <Content Include="Managed\Entities\mctools_parametercategory\SavedQueries\{6f970c73-7f37-4c28-8229-c315e361f54f}.xml" />
+    <Content Include="Managed\Entities\mctools_parametercategory\SavedQueries\{a1d3e3f0-5519-496b-8a85-a5358717b9aa}.xml" />
+    <Content Include="Managed\Entities\mctools_parametercategory\SavedQueries\{afb40f54-b2ef-4662-92a5-d52ea18dc6d1}.xml" />
+    <Content Include="Managed\Entities\mctools_parametercategory\SavedQueries\{cc28696d-ba28-4f57-bd9a-d80f1323092f}.xml" />
+    <Content Include="Managed\Entities\mctools_parametercategory\SavedQueries\{e4bd5227-c35a-e011-bdd3-0800273a66a6}.xml" />
+    <Content Include="Managed\Entities\mctools_parameter\Entity.xml" />
+    <Content Include="Managed\Entities\mctools_parameter\FormXml\main\{852576b2-652b-42e6-9333-4c2ef34eddfb}.xml" />
+    <Content Include="Managed\Entities\mctools_parameter\FormXml\mobile\{52a486ce-e4b7-422b-bdfc-e916cbdb83ce}.xml" />
+    <Content Include="Managed\Entities\mctools_parameter\RibbonDiff.xml" />
+    <Content Include="Managed\Entities\mctools_parameter\SavedQueries\{062cb89c-40dc-4b0b-b268-a4ad7249851f}.xml" />
+    <Content Include="Managed\Entities\mctools_parameter\SavedQueries\{19c01d36-2576-4cfb-9408-e85758999130}.xml" />
+    <Content Include="Managed\Entities\mctools_parameter\SavedQueries\{4fe7b374-1aee-4971-a732-dff5a6881f96}.xml" />
+    <Content Include="Managed\Entities\mctools_parameter\SavedQueries\{761de7df-f8ee-4a73-b079-d92810cd2594}.xml" />
+    <Content Include="Managed\Entities\mctools_parameter\SavedQueries\{b3e531a2-832c-45a0-a71f-cd372b0d104f}.xml" />
+    <Content Include="Managed\Entities\mctools_parameter\SavedQueries\{cc50160f-c45a-e011-bdd3-0800273a66a6}.xml" />
+    <Content Include="Managed\Entities\mctools_parameter\SavedQueries\{fa93847e-7dfc-469b-807c-06904575a600}.xml" />
+    <Content Include="Managed\Other\Customizations.xml" />
+    <Content Include="Managed\Other\EntityMaps.xml" />
+    <Content Include="Managed\Other\Relationships.xml" />
+    <Content Include="Managed\Other\Relationships\mctools_parameter.xml" />
+    <Content Include="Managed\Other\Relationships\mctools_parametercategory.xml" />
+    <Content Include="Managed\Other\Relationships\Organization.xml" />
+    <Content Include="Managed\Other\Relationships\SystemUser.xml" />
+    <Content Include="Managed\Other\Solution.xml" />
+    <Content Include="Managed\PluginAssemblies\McToolsParametersPlugins-91A12C3A-0066-40B6-9018-C60E5732B62B\McToolsParametersPlugins.dll.data.xml" />
+    <Content Include="Managed\SdkMessageProcessingSteps\{33855627-ff18-e211-b546-d4856451dc79}.xml" />
+    <Content Include="Managed\SdkMessageProcessingSteps\{7c913321-ff18-e211-b546-d4856451dc79}.xml" />
+    <Content Include="Managed\WebResources\mctools_\Images\MscrmToolsLogo.png.data.xml" />
+    <Content Include="Managed\WebResources\mctools_\Images\parameterCategoryIcon16.png.data.xml" />
+    <Content Include="Managed\WebResources\mctools_\Images\parameterCategoryIcon32.png.data.xml" />
+    <Content Include="Managed\WebResources\mctools_\Images\parameterIcon16.png.data.xml" />
+    <Content Include="Managed\WebResources\mctools_\Images\parameterIcon32.png.data.xml" />
+    <Content Include="Managed\WebResources\mctools_\Pages\index.html.data.xml" />
+    <Content Include="Managed\WebResources\mctools_\Pages\style.css.data.xml" />
+    <Content Include="Managed\WebResources\mctools_\Scripts\configuration.js.data.xml" />
+    <Content Include="Managed\WebResources\mctools_\Scripts\Parameter.js.data.xml" />
+    <Content Include="Unmanaged\Entities\mctools_parametercategory\Entity.xml" />
+    <Content Include="Unmanaged\Entities\mctools_parametercategory\FormXml\main\{206c6df3-1753-42d2-b224-60ed880b339b}.xml" />
+    <Content Include="Unmanaged\Entities\mctools_parametercategory\FormXml\mobile\{3fb36b49-1563-48c4-921d-42e204ac774f}.xml" />
+    <Content Include="Unmanaged\Entities\mctools_parametercategory\RibbonDiff.xml" />
+    <Content Include="Unmanaged\Entities\mctools_parametercategory\SavedQueries\{064dc7fb-b051-4702-9ec0-b268bb458b2c}.xml" />
+    <Content Include="Unmanaged\Entities\mctools_parametercategory\SavedQueries\{2cf75fc4-1875-4369-b5f4-fb648410ef89}.xml" />
+    <Content Include="Unmanaged\Entities\mctools_parametercategory\SavedQueries\{6f970c73-7f37-4c28-8229-c315e361f54f}.xml" />
+    <Content Include="Unmanaged\Entities\mctools_parametercategory\SavedQueries\{a1d3e3f0-5519-496b-8a85-a5358717b9aa}.xml" />
+    <Content Include="Unmanaged\Entities\mctools_parametercategory\SavedQueries\{afb40f54-b2ef-4662-92a5-d52ea18dc6d1}.xml" />
+    <Content Include="Unmanaged\Entities\mctools_parametercategory\SavedQueries\{cc28696d-ba28-4f57-bd9a-d80f1323092f}.xml" />
+    <Content Include="Unmanaged\Entities\mctools_parametercategory\SavedQueries\{e4bd5227-c35a-e011-bdd3-0800273a66a6}.xml" />
+    <Content Include="Unmanaged\Entities\mctools_parameter\Entity.xml" />
+    <Content Include="Unmanaged\Entities\mctools_parameter\FormXml\main\{852576b2-652b-42e6-9333-4c2ef34eddfb}.xml" />
+    <Content Include="Unmanaged\Entities\mctools_parameter\FormXml\mobile\{52a486ce-e4b7-422b-bdfc-e916cbdb83ce}.xml" />
+    <Content Include="Unmanaged\Entities\mctools_parameter\RibbonDiff.xml" />
+    <Content Include="Unmanaged\Entities\mctools_parameter\SavedQueries\{062cb89c-40dc-4b0b-b268-a4ad7249851f}.xml" />
+    <Content Include="Unmanaged\Entities\mctools_parameter\SavedQueries\{19c01d36-2576-4cfb-9408-e85758999130}.xml" />
+    <Content Include="Unmanaged\Entities\mctools_parameter\SavedQueries\{4fe7b374-1aee-4971-a732-dff5a6881f96}.xml" />
+    <Content Include="Unmanaged\Entities\mctools_parameter\SavedQueries\{761de7df-f8ee-4a73-b079-d92810cd2594}.xml" />
+    <Content Include="Unmanaged\Entities\mctools_parameter\SavedQueries\{b3e531a2-832c-45a0-a71f-cd372b0d104f}.xml" />
+    <Content Include="Unmanaged\Entities\mctools_parameter\SavedQueries\{cc50160f-c45a-e011-bdd3-0800273a66a6}.xml" />
+    <Content Include="Unmanaged\Entities\mctools_parameter\SavedQueries\{fa93847e-7dfc-469b-807c-06904575a600}.xml" />
+    <Content Include="Unmanaged\Other\Customizations.xml" />
+    <Content Include="Unmanaged\Other\EntityMaps.xml" />
+    <Content Include="Unmanaged\Other\Relationships.xml" />
+    <Content Include="Unmanaged\Other\Relationships\mctools_parameter.xml" />
+    <Content Include="Unmanaged\Other\Relationships\mctools_parametercategory.xml" />
+    <Content Include="Unmanaged\Other\Relationships\Organization.xml" />
+    <Content Include="Unmanaged\Other\Relationships\SystemUser.xml" />
+    <Content Include="Unmanaged\Other\Solution.xml" />
+    <Content Include="Unmanaged\PluginAssemblies\McToolsParametersPlugins-91A12C3A-0066-40B6-9018-C60E5732B62B\McToolsParametersPlugins.dll.data.xml" />
+    <Content Include="Unmanaged\SdkMessageProcessingSteps\{33855627-ff18-e211-b546-d4856451dc79}.xml" />
+    <Content Include="Unmanaged\SdkMessageProcessingSteps\{7c913321-ff18-e211-b546-d4856451dc79}.xml" />
+    <Content Include="Unmanaged\WebResources\mctools_\Images\MscrmToolsLogo.png.data.xml" />
+    <Content Include="Unmanaged\WebResources\mctools_\Images\parameterCategoryIcon16.png.data.xml" />
+    <Content Include="Unmanaged\WebResources\mctools_\Images\parameterCategoryIcon32.png.data.xml" />
+    <Content Include="Unmanaged\WebResources\mctools_\Images\parameterIcon16.png.data.xml" />
+    <Content Include="Unmanaged\WebResources\mctools_\Images\parameterIcon32.png.data.xml" />
+    <Content Include="Unmanaged\WebResources\mctools_\Pages\index.html.data.xml" />
+    <Content Include="Unmanaged\WebResources\mctools_\Pages\style.css.data.xml" />
+    <Content Include="Unmanaged\WebResources\mctools_\Scripts\configuration.js.data.xml" />
+    <Content Include="Unmanaged\WebResources\mctools_\Scripts\Parameter.js.data.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

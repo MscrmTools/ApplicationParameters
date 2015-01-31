@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EntityRelationships>
+  <EntityRelationship Name="lk_mctools_parameter_createdby" />
+  <EntityRelationship Name="lk_mctools_parameter_modifiedby" />
+  <EntityRelationship Name="lk_mctools_parametercategory_createdby" />
+  <EntityRelationship Name="lk_mctools_parametercategory_modifiedby" />
+  <EntityRelationship Name="mctools_parameter_AsyncOperations" />
+  <EntityRelationship Name="mctools_parameter_BulkDeleteFailures" />
+  <EntityRelationship Name="mctools_parameter_PrincipalObjectAttributeAccesses" />
+  <EntityRelationship Name="mctools_parameter_ProcessSession" />
+  <EntityRelationship Name="mctools_parameter_UserEntityInstanceDatas" />
+  <EntityRelationship Name="mctools_parametercategory_AsyncOperations" />
+  <EntityRelationship Name="mctools_parametercategory_BulkDeleteFailures" />
+  <EntityRelationship Name="mctools_parametercategory_mctools_parameter" />
+  <EntityRelationship Name="mctools_parametercategory_PrincipalObjectAttributeAccesses" />
+  <EntityRelationship Name="mctools_parametercategory_ProcessSession" />
+  <EntityRelationship Name="mctools_parametercategory_UserEntityInstanceDatas" />
+  <EntityRelationship Name="organization_mctools_parameter" />
+  <EntityRelationship Name="organization_mctools_parametercategory" />
+</EntityRelationships>

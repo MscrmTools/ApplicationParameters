@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EntityMaps>
+  <EntityMap>
+    <EntitySource>mctools_parametercategory</EntitySource>
+    <EntityTarget>mctools_parameter</EntityTarget>
+    <AttributeMaps />
+  </EntityMap>
+</EntityMaps>

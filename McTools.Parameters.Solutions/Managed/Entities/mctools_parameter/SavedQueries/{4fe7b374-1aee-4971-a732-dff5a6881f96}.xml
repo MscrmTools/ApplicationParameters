@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedquery>
+  <IsCustomizable>1</IsCustomizable>
+  <CanBeDeleted>0</CanBeDeleted>
+  <isquickfindquery>0</isquickfindquery>
+  <isprivate>0</isprivate>
+  <isdefault>1</isdefault>
+  <returnedtypecode>10005</returnedtypecode>
+  <savedqueryid>{4fe7b374-1aee-4971-a732-dff5a6881f96}</savedqueryid>
+  <layoutxml>
+    <grid name="resultset" object="10005" jump="mctools_name" select="1" icon="1" preview="1">
+      <row name="result" id="mctools_parameterid">
+        <cell name="mctools_parametercategoryid" width="150" />
+        <cell name="mctools_name" width="200" />
+        <cell name="mctools_globalvalue" width="300" />
+      </row>
+    </grid>
+  </layoutxml>
+  <querytype>1</querytype>
+  <fetchxml>
+    <fetch version="1.0" mapping="logical">
+      <entity name="mctools_parameter">
+        <attribute name="mctools_parameterid" />
+        <attribute name="mctools_name" />
+        <order attribute="mctools_name" descending="false" />
+      </entity>
+    </fetch>
+  </fetchxml>
+  <IntroducedVersion>1.3.0.1</IntroducedVersion>
+  <LocalizedNames>
+    <LocalizedName description="Parameter Advanced Find View" languagecode="1033" />
+    <LocalizedName description="Vue Recherche Avancée Paramètres" languagecode="1036" />
+  </LocalizedNames>
+</savedquery>

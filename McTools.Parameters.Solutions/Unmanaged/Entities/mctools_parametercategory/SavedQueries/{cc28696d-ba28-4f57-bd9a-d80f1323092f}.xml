@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedquery>
+  <IsCustomizable>1</IsCustomizable>
+  <CanBeDeleted>0</CanBeDeleted>
+  <isquickfindquery>1</isquickfindquery>
+  <isprivate>0</isprivate>
+  <isdefault>1</isdefault>
+  <returnedtypecode>10006</returnedtypecode>
+  <savedqueryid>{cc28696d-ba28-4f57-bd9a-d80f1323092f}</savedqueryid>
+  <layoutxml>
+    <grid name="resultset" object="10006" jump="mctools_name" select="1" icon="1" preview="1">
+      <row name="result" id="mctools_parametercategoryid">
+        <cell name="mctools_name" width="300" />
+        <cell name="createdon" width="125" />
+      </row>
+    </grid>
+  </layoutxml>
+  <querytype>4</querytype>
+  <fetchxml>
+    <fetch version="1.0" mapping="logical">
+      <entity name="mctools_parametercategory">
+        <attribute name="mctools_parametercategoryid" />
+        <attribute name="mctools_name" />
+        <attribute name="createdon" />
+        <order attribute="mctools_name" descending="false" />
+        <filter type="and">
+          <condition attribute="statecode" operator="eq" value="0" />
+        </filter>
+        <filter type="or" isquickfindfields="1">
+          <condition attribute="mctools_name" operator="like" value="{0}" />
+        </filter>
+      </entity>
+    </fetch>
+  </fetchxml>
+  <IntroducedVersion>1.3.0.1</IntroducedVersion>
+  <LocalizedNames>
+    <LocalizedName description="Quick Find Active Parameter Category " languagecode="1033" />
+    <LocalizedName description="Recherche Rapide Catégories de paramètre actives" languagecode="1036" />
+  </LocalizedNames>
+</savedquery>

@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<systemform>
+  <formid>{206c6df3-1753-42d2-b224-60ed880b339b}</formid>
+  <IntroducedVersion>1.3.0.1</IntroducedVersion>
+  <FormPresentation>0</FormPresentation>
+  <FormActivationState>1</FormActivationState>
+  <form>
+    <tabs>
+      <tab verticallayout="true" id="{5cc33e6e-5840-4d36-bfe0-05550db45d44}" IsUserDefined="1">
+        <labels>
+          <label description="General" languagecode="1033" />
+          <label description="Général" languagecode="1036" />
+        </labels>
+        <columns>
+          <column width="100%">
+            <sections>
+              <section showlabel="false" showbar="false" IsUserDefined="0" id="{a3199ad9-5707-4bed-954d-cea45214857a}">
+                <labels>
+                  <label description="General" languagecode="1033" />
+                  <label description="Général" languagecode="1036" />
+                </labels>
+                <rows>
+                  <row>
+                    <cell id="{549d535e-6b10-4669-b847-04f6a7ef1326}" colspan="2">
+                      <labels>
+                        <label description="" languagecode="1036" />
+                      </labels>
+                      <control id="mctools_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="mctools_name" />
+                    </cell>
+                  </row>
+                </rows>
+              </section>
+            </sections>
+          </column>
+        </columns>
+      </tab>
+    </tabs>
+    <footer id="{864e09d1-7eaf-4880-b8c2-a930bc7f43eb}">
+      <rows>
+        <row>
+          <cell id="{6b5053bc-3373-45ab-bf5f-c3e1a7969fcc}">
+            <labels>
+              <label description="" languagecode="1036" />
+            </labels>
+            <control id="footer_statecode" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="statecode" />
+          </cell>
+        </row>
+      </rows>
+    </footer>
+  </form>
+  <IsCustomizable>1</IsCustomizable>
+  <CanBeDeleted>1</CanBeDeleted>
+  <LocalizedNames>
+    <LocalizedName description="Parameter category" languagecode="1033" />
+    <LocalizedName description="Catégorie de paramètre" languagecode="1036" />
+  </LocalizedNames>
+  <Descriptions>
+    <Description description="Form for this entity" languagecode="1033" />
+    <Description description="Formulaire pour cette entité." languagecode="1036" />
+  </Descriptions>
+</systemform>

@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedquery>
+  <IsCustomizable>1</IsCustomizable>
+  <CanBeDeleted>0</CanBeDeleted>
+  <isquickfindquery>1</isquickfindquery>
+  <isprivate>0</isprivate>
+  <isdefault>1</isdefault>
+  <returnedtypecode>10005</returnedtypecode>
+  <savedqueryid>{761de7df-f8ee-4a73-b079-d92810cd2594}</savedqueryid>
+  <layoutxml>
+    <grid name="resultset" object="10005" jump="mctools_name" select="1" icon="1" preview="1">
+      <row name="result" id="mctools_parameterid">
+        <cell name="mctools_parametercategoryid" width="150" />
+        <cell name="mctools_name" width="200" />
+        <cell name="mctools_globalvalue" width="300" />
+      </row>
+    </grid>
+  </layoutxml>
+  <querytype>4</querytype>
+  <fetchxml>
+    <fetch version="1.0" mapping="logical">
+      <entity name="mctools_parameter">
+        <attribute name="mctools_parameterid" />
+        <attribute name="mctools_name" />
+        <order attribute="mctools_name" descending="false" />
+        <filter type="and">
+          <condition attribute="statecode" operator="eq" value="0" />
+        </filter>
+        <filter type="or" isquickfindfields="1">
+          <condition attribute="mctools_name" operator="like" value="{0}" />
+        </filter>
+      </entity>
+    </fetch>
+  </fetchxml>
+  <IntroducedVersion>1.3.0.1</IntroducedVersion>
+  <LocalizedNames>
+    <LocalizedName description="Quick Find Active Parameter" languagecode="1033" />
+    <LocalizedName description="Recherche rapide Paramètres actifs" languagecode="1036" />
+  </LocalizedNames>
+</savedquery>

@@ -1,0 +1,319 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<systemform>
+  <formid>{852576b2-652b-42e6-9333-4c2ef34eddfb}</formid>
+  <IntroducedVersion>1.3.0.1</IntroducedVersion>
+  <FormPresentation>0</FormPresentation>
+  <FormActivationState>1</FormActivationState>
+  <form shownavigationbar="true">
+    <tabs>
+      <tab verticallayout="true" id="{21154619-ab4e-4771-88b1-046955cb2709}" IsUserDefined="1">
+        <labels>
+          <label description="General" languagecode="1033" />
+          <label description="Général" languagecode="1036" />
+        </labels>
+        <columns>
+          <column width="100%">
+            <sections>
+              <section showlabel="false" showbar="false" IsUserDefined="0" id="{79dce965-f4be-41f0-8c27-14c0b256a860}">
+                <labels>
+                  <label description="General" languagecode="1033" />
+                  <label description="Général" languagecode="1036" />
+                </labels>
+                <rows>
+                  <row>
+                    <cell id="{b699e08e-8d48-4c71-b152-77ccf87cb968}" colspan="1" showlabel="true" locklevel="0">
+                      <labels>
+                        <label description="" languagecode="1036" />
+                      </labels>
+                      <control id="mctools_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="mctools_name" disabled="false" />
+                    </cell>
+                    <cell id="{7b38d806-3058-2aa8-a221-1563762cac93}" showlabel="true" locklevel="0">
+                      <labels>
+                        <label description="" languagecode="1036" />
+                      </labels>
+                      <control id="mctools_logicalname" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="mctools_logicalname" disabled="false" />
+                    </cell>
+                  </row>
+                  <row>
+                    <cell id="{49a5eaec-815a-8112-be08-4d96d454a7ec}" showlabel="true" locklevel="0">
+                      <labels>
+                        <label description="" languagecode="1036" />
+                      </labels>
+                      <control id="mctools_parametercategoryid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="mctools_parametercategoryid" disabled="false" />
+                    </cell>
+                    <cell id="{c7dc291a-6a5e-a92e-b676-a1ac34a3e7a4}" showlabel="true" locklevel="0">
+                      <labels>
+                        <label description="" languagecode="1036" />
+                      </labels>
+                      <control id="modifiedon" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="modifiedon" disabled="false" />
+                    </cell>
+                  </row>
+                  <row>
+                    <cell id="{02344e9d-2267-c7b9-12b0-519cc7d2e373}" showlabel="true" locklevel="0" colspan="2" rowspan="4">
+                      <labels>
+                        <label description="" languagecode="1036" />
+                      </labels>
+                      <control id="mctools_description" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="mctools_description" disabled="false" />
+                    </cell>
+                  </row>
+                  <row></row>
+                  <row></row>
+                  <row></row>
+                </rows>
+              </section>
+              <section name="{21154619-ab4e-4771-88b1-046955cb2709}_section_2" showlabel="true" showbar="true" locklevel="0" id="{49402680-143a-cece-168b-16751d1450b5}" IsUserDefined="0" layout="varwidth" columns="11" labelwidth="115" celllabelalignment="Left" celllabelposition="Left">
+                <labels>
+                  <label description="Value" languagecode="1033" />
+                  <label description="Valeur" languagecode="1036" />
+                </labels>
+                <rows>
+                  <row>
+                    <cell id="{189e477e-6e95-b32e-6b14-373d2617695d}" showlabel="true" locklevel="0">
+                      <labels>
+                        <label description="" languagecode="1036" />
+                      </labels>
+                      <control id="mctools_valuetype" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="mctools_valuetype" disabled="false" />
+                    </cell>
+                    <cell id="{b27738ec-d557-ad94-82b1-1ea623082261}" showlabel="true" locklevel="0" visible="false">
+                      <labels>
+                        <label description="Global value" languagecode="1033" />
+                        <label description="Valeur globale" languagecode="1036" />
+                      </labels>
+                      <control id="mctools_globalvalue" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="mctools_globalvalue" disabled="false" />
+                    </cell>
+                  </row>
+                </rows>
+              </section>
+              <section name="{21154619-ab4e-4771-88b1-046955cb2709}_section_3" showlabel="false" showbar="false" locklevel="0" id="{142261bc-3dc8-92c2-4588-96bedc9d9cb8}" IsUserDefined="0" layout="varwidth" columns="11" labelwidth="115" celllabelalignment="Left" celllabelposition="Left" visible="false">
+                <labels>
+                  <label description="Section" languagecode="1033" />
+                  <label description="Section" languagecode="1036" />
+                </labels>
+                <rows>
+                  <row>
+                    <cell id="{d7ad627b-6191-a324-d2bc-d3da2d254b16}" showlabel="true" locklevel="0" colspan="2">
+                      <labels>
+                        <label description="Value" languagecode="1033" />
+                        <label description="Valeur" languagecode="1036" />
+                      </labels>
+                      <control id="mctools_textvalue" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="mctools_textvalue" disabled="false" />
+                    </cell>
+                  </row>
+                </rows>
+              </section>
+              <section name="{21154619-ab4e-4771-88b1-046955cb2709}_section_4" showlabel="false" showbar="false" locklevel="0" id="{992b5928-ed4d-2596-9a65-816e237437ca}" IsUserDefined="0" layout="varwidth" columns="11" labelwidth="115" celllabelalignment="Left" celllabelposition="Left" visible="false">
+                <labels>
+                  <label description="Section" languagecode="1033" />
+                  <label description="Section" languagecode="1036" />
+                </labels>
+                <rows>
+                  <row>
+                    <cell id="{627ada0d-3709-3c69-3196-7304c685c694}" showlabel="true" locklevel="0" colspan="2" rowspan="6">
+                      <labels>
+                        <label description="Value" languagecode="1033" />
+                        <label description="Valeur" languagecode="1036" />
+                      </labels>
+                      <control id="mctools_memovalue" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="mctools_memovalue" disabled="false" />
+                    </cell>
+                  </row>
+                  <row></row>
+                  <row></row>
+                  <row></row>
+                  <row></row>
+                  <row></row>
+                </rows>
+              </section>
+              <section name="{21154619-ab4e-4771-88b1-046955cb2709}_section_5" showlabel="false" showbar="false" locklevel="0" id="{c106bd71-0e6c-542b-8747-1e399407832d}" IsUserDefined="0" layout="varwidth" columns="11" labelwidth="115" celllabelalignment="Left" celllabelposition="Left" visible="false">
+                <labels>
+                  <label description="Section" languagecode="1033" />
+                  <label description="Section" languagecode="1036" />
+                </labels>
+                <rows>
+                  <row>
+                    <cell id="{c6b5bae0-479c-7a5a-ea63-b055887a284d}" showlabel="true" locklevel="0">
+                      <labels>
+                        <label description="Value" languagecode="1033" />
+                        <label description="Valeur" languagecode="1036" />
+                      </labels>
+                      <control id="mctools_boolvalue" classid="{67FAC785-CD58-4f9f-ABB3-4B7DDC6ED5ED}" datafieldname="mctools_boolvalue" disabled="false" />
+                    </cell>
+                    <cell id="{e0e147e2-a150-26bb-2b14-557edc268d9c}" showlabel="false">
+                      <labels>
+                        <label description="" languagecode="1036" />
+                      </labels>
+                    </cell>
+                  </row>
+                </rows>
+              </section>
+              <section name="{21154619-ab4e-4771-88b1-046955cb2709}_section_6" showlabel="false" showbar="false" locklevel="0" id="{93d2d037-a592-2a4b-b7a4-9753a6db39ae}" IsUserDefined="0" layout="varwidth" columns="11" labelwidth="115" celllabelalignment="Left" celllabelposition="Left" visible="false">
+                <labels>
+                  <label description="Section" languagecode="1033" />
+                  <label description="Section" languagecode="1036" />
+                </labels>
+                <rows>
+                  <row>
+                    <cell id="{41c5275c-abeb-cd2e-2aca-d77483132bcb}" showlabel="true" locklevel="0">
+                      <labels>
+                        <label description="Value" languagecode="1033" />
+                        <label description="Valeur" languagecode="1036" />
+                      </labels>
+                      <control id="mctools_integervalue" classid="{C6D124CA-7EDA-4a60-AEA9-7FB8D318B68F}" datafieldname="mctools_integervalue" disabled="false" />
+                    </cell>
+                    <cell id="{8d1145da-1383-3191-7dab-9c905a537525}" showlabel="false">
+                      <labels>
+                        <label description="" languagecode="1036" />
+                      </labels>
+                    </cell>
+                  </row>
+                </rows>
+              </section>
+              <section name="{21154619-ab4e-4771-88b1-046955cb2709}_section_7" showlabel="false" showbar="false" locklevel="0" id="{b98bd043-3710-7587-6e25-cebb47a7e4ea}" IsUserDefined="0" layout="varwidth" columns="11" labelwidth="115" celllabelalignment="Left" celllabelposition="Left" visible="false">
+                <labels>
+                  <label description="Section" languagecode="1033" />
+                  <label description="Section" languagecode="1036" />
+                </labels>
+                <rows>
+                  <row>
+                    <cell id="{a642405c-39b3-b11a-28b3-69e0b477b4de}" showlabel="true" locklevel="0">
+                      <labels>
+                        <label description="Value" languagecode="1033" />
+                        <label description="Valeur" languagecode="1036" />
+                      </labels>
+                      <control id="mctools_decimalvalue" classid="{C3EFE0C3-0EC6-42be-8349-CBD9079DFD8E}" datafieldname="mctools_decimalvalue" disabled="false" />
+                    </cell>
+                    <cell id="{e0bdce37-369a-34a1-b865-422e555bca9e}" showlabel="false">
+                      <labels>
+                        <label description="" languagecode="1036" />
+                      </labels>
+                    </cell>
+                  </row>
+                </rows>
+              </section>
+              <section name="{21154619-ab4e-4771-88b1-046955cb2709}_section_8" showlabel="false" showbar="false" locklevel="0" id="{eed2c546-dd45-5da8-ddda-657622689560}" IsUserDefined="0" layout="varwidth" columns="11" labelwidth="115" celllabelalignment="Left" celllabelposition="Left" visible="false">
+                <labels>
+                  <label description="Section" languagecode="1033" />
+                  <label description="Section" languagecode="1036" />
+                </labels>
+                <rows>
+                  <row>
+                    <cell id="{760ba7be-74bd-ba5b-2487-ae1814714955}" showlabel="true" locklevel="0">
+                      <labels>
+                        <label description="Value" languagecode="1033" />
+                        <label description="Valeur" languagecode="1036" />
+                      </labels>
+                      <control id="mctools_floatvalue" classid="{0D2C745A-E5A8-4c8f-BA63-C6D3BB604660}" datafieldname="mctools_floatvalue" disabled="false" />
+                    </cell>
+                    <cell id="{a6944cca-709b-5373-5555-4eae789cc6b5}" showlabel="false">
+                      <labels>
+                        <label description="" languagecode="1036" />
+                      </labels>
+                    </cell>
+                  </row>
+                </rows>
+              </section>
+              <section name="{21154619-ab4e-4771-88b1-046955cb2709}_section_9" showlabel="false" showbar="false" locklevel="0" id="{b4ba1c74-d5a4-026e-603a-71278116e6c2}" IsUserDefined="0" layout="varwidth" columns="11" labelwidth="115" celllabelalignment="Left" celllabelposition="Left" visible="false">
+                <labels>
+                  <label description="Section" languagecode="1033" />
+                  <label description="Section" languagecode="1036" />
+                </labels>
+                <rows>
+                  <row>
+                    <cell id="{8b93abb3-291a-aac4-06d5-ded06495270c}" showlabel="true" locklevel="0">
+                      <labels>
+                        <label description="Value" languagecode="1033" />
+                        <label description="Valeur" languagecode="1036" />
+                      </labels>
+                      <control id="mctools_datevalue" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="mctools_datevalue" disabled="false" />
+                    </cell>
+                    <cell id="{243cd602-c39c-5143-4175-77d6dd4dbba4}" showlabel="false">
+                      <labels>
+                        <label description="" languagecode="1036" />
+                      </labels>
+                    </cell>
+                  </row>
+                </rows>
+              </section>
+            </sections>
+          </column>
+        </columns>
+      </tab>
+    </tabs>
+    <footer id="{d404be42-2310-490a-b8fc-0f9d8c61255b}">
+      <rows>
+        <row>
+          <cell id="{c09bde52-daee-441f-8733-45e468551715}">
+            <labels>
+              <label description="" languagecode="1036" />
+            </labels>
+            <control id="footer_statecode" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="statecode" />
+          </cell>
+        </row>
+      </rows>
+    </footer>
+    <Navigation>
+      <NavBar></NavBar>
+      <NavBarAreas>
+        <NavBarArea Id="Info">
+          <Titles>
+            <Title LCID="1036" Text="Éléments communs" />
+            <Title LCID="1033" Text="Common items" />
+          </Titles>
+        </NavBarArea>
+        <NavBarArea Id="Sales">
+          <Titles>
+            <Title LCID="1036" Text="Ventes" />
+            <Title LCID="1033" Text="Sales" />
+          </Titles>
+        </NavBarArea>
+        <NavBarArea Id="Service">
+          <Titles>
+            <Title LCID="1036" Text="Service" />
+            <Title LCID="1033" Text="Service" />
+          </Titles>
+        </NavBarArea>
+        <NavBarArea Id="Marketing">
+          <Titles>
+            <Title LCID="1036" Text="Marketing" />
+            <Title LCID="1033" Text="Marketing" />
+          </Titles>
+        </NavBarArea>
+        <NavBarArea Id="ProcessCenter">
+          <Titles>
+            <Title LCID="1036" Text="Processus" />
+            <Title LCID="1033" Text="Processes" />
+          </Titles>
+        </NavBarArea>
+      </NavBarAreas>
+    </Navigation>
+    <formLibraries>
+      <Library name="mctools_/Scripts/Parameter.js" libraryUniqueId="{ceb7141a-c6e5-29cd-0b3d-175b4219341d}" />
+    </formLibraries>
+    <events>
+      <event name="onload" application="false" active="false">
+        <Handlers>
+          <Handler handlerUniqueId="{b4ac249a-307b-8e35-94b1-43d6da13bd85}" functionName="loadForm" libraryName="mctools_/Scripts/Parameter.js" enabled="true" passExecutionContext="false" parameters="" />
+        </Handlers>
+      </event>
+      <event name="onchange" application="false" active="false" attribute="mctools_valuetype">
+        <Handlers>
+          <Handler handlerUniqueId="{527a1c28-3d23-4e51-299e-9c462c8087ae}" functionName="manageControlDisplay" libraryName="mctools_/Scripts/Parameter.js" enabled="true" passExecutionContext="false" parameters="" />
+        </Handlers>
+      </event>
+      <event name="onchange" application="false" active="false" attribute="mctools_name">
+        <Handlers>
+          <Handler handlerUniqueId="{a4161734-5c49-dd4d-2692-26031d3a6586}" functionName="copyDisplayNameToLogicalName" libraryName="mctools_/Scripts/Parameter.js" enabled="true" passExecutionContext="false" parameters="" />
+        </Handlers>
+      </event>
+    </events>
+  </form>
+  <IsCustomizable>1</IsCustomizable>
+  <CanBeDeleted>1</CanBeDeleted>
+  <LocalizedNames>
+    <LocalizedName description="Parameter" languagecode="1033" />
+    <LocalizedName description="Paramètre" languagecode="1036" />
+  </LocalizedNames>
+  <Descriptions>
+    <Description description="Form for this entity" languagecode="1033" />
+    <Description description="Formulaire pour cette entité." languagecode="1036" />
+  </Descriptions>
+</systemform>

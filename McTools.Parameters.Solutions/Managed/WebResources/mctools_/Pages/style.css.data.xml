@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WebResource>
+  <WebResourceId>{b049ff94-a198-e311-8698-00155d012004}</WebResourceId>
+  <Name>mctools_/Pages/style.css</Name>
+  <WebResourceType>2</WebResourceType>
+  <IntroducedVersion>1.3.0.1</IntroducedVersion>
+  <IsEnabledForMobileClient>0</IsEnabledForMobileClient>
+  <IsCustomizable>1</IsCustomizable>
+  <CanBeDeleted>1</CanBeDeleted>
+  <IsHidden>0</IsHidden>
+  <FileName>/WebResources/mctools_PagesstylecssB049FF94-A198-E311-8698-00155D012004</FileName>
+</WebResource>
