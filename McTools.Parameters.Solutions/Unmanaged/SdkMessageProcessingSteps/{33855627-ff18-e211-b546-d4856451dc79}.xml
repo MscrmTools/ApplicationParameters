@@ -3,6 +3,7 @@
   <PluginTypeName>McTools.Parameters.Plugins.EntityHandler, McTools.Parameters.Plugins, Version=1.0.2822.9, Culture=neutral, PublicKeyToken=3392a60adf550efd</PluginTypeName>
   <PrimaryEntity>mctools_parameter</PrimaryEntity>
   <AsyncAutoDelete>0</AsyncAutoDelete>
+  <FilteringAttributes></FilteringAttributes>
   <InvocationSource>1</InvocationSource>
   <Mode>0</Mode>
   <Rank>1</Rank>

@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Workflow WorkflowId="{28abf1a1-fd74-e611-80f0-00155dc99304}" Name="Display fields by type" Description="Cliquer pour ajouter une description">
+  <XamlFileName>/Workflows/Displayfieldsbytype-28ABF1A1-FD74-E611-80F0-00155DC99304.xaml</XamlFileName>
+  <Type>1</Type>
+  <Subprocess>0</Subprocess>
+  <Category>2</Category>
+  <Mode>1</Mode>
+  <Scope>4</Scope>
+  <OnDemand>0</OnDemand>
+  <TriggerOnCreate>0</TriggerOnCreate>
+  <TriggerOnDelete>0</TriggerOnDelete>
+  <AsyncAutodelete>0</AsyncAutodelete>
+  <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+  <StateCode>1</StateCode>
+  <StatusCode>2</StatusCode>
+  <RunAs>1</RunAs>
+  <IsTransacted>1</IsTransacted>
+  <IntroducedVersion>8.2016.3.25</IntroducedVersion>
+  <IsCustomizable>1</IsCustomizable>
+  <PrimaryEntity>mctools_parameter</PrimaryEntity>
+  <ProcessTriggers>
+    <ProcessTrigger processtriggerid="{379a5d88-ff74-e611-80f0-00155dc99304}">
+      <controltype>1</controltype>
+      <formid>{852576b2-652b-42e6-9333-4c2ef34eddfb}</formid>
+      <scope>1</scope>
+      <controlname>mctools_valuetype</controlname>
+      <event>change</event>
+      <iscustomizable>1</iscustomizable>
+      <primaryentitytypecode>mctools_parameter</primaryentitytypecode>
+    </ProcessTrigger>
+    <ProcessTrigger processtriggerid="{389a5d88-ff74-e611-80f0-00155dc99304}">
+      <formid>{852576b2-652b-42e6-9333-4c2ef34eddfb}</formid>
+      <scope>1</scope>
+      <event>load</event>
+      <iscustomizable>1</iscustomizable>
+      <primaryentitytypecode>mctools_parameter</primaryentitytypecode>
+    </ProcessTrigger>
+    <ProcessTrigger processtriggerid="{399a5d88-ff74-e611-80f0-00155dc99304}">
+      <controltype>1</controltype>
+      <formid>{852576b2-652b-42e6-9333-4c2ef34eddfb}</formid>
+      <scope>1</scope>
+      <controlname>mctools_valuetype</controlname>
+      <event>change</event>
+      <iscustomizable>1</iscustomizable>
+      <primaryentitytypecode>mctools_parameter</primaryentitytypecode>
+    </ProcessTrigger>
+    <ProcessTrigger processtriggerid="{3a9a5d88-ff74-e611-80f0-00155dc99304}">
+      <formid>{852576b2-652b-42e6-9333-4c2ef34eddfb}</formid>
+      <scope>1</scope>
+      <event>load</event>
+      <iscustomizable>1</iscustomizable>
+      <primaryentitytypecode>mctools_parameter</primaryentitytypecode>
+    </ProcessTrigger>
+    <ProcessTrigger processtriggerid="{3b9a5d88-ff74-e611-80f0-00155dc99304}">
+      <controltype>1</controltype>
+      <formid>{852576b2-652b-42e6-9333-4c2ef34eddfb}</formid>
+      <scope>1</scope>
+      <controlname>mctools_valuetype</controlname>
+      <event>change</event>
+      <iscustomizable>1</iscustomizable>
+      <primaryentitytypecode>mctools_parameter</primaryentitytypecode>
+    </ProcessTrigger>
+    <ProcessTrigger processtriggerid="{3c9a5d88-ff74-e611-80f0-00155dc99304}">
+      <formid>{852576b2-652b-42e6-9333-4c2ef34eddfb}</formid>
+      <scope>1</scope>
+      <event>load</event>
+      <iscustomizable>1</iscustomizable>
+      <primaryentitytypecode>mctools_parameter</primaryentitytypecode>
+    </ProcessTrigger>
+    <ProcessTrigger processtriggerid="{3d9a5d88-ff74-e611-80f0-00155dc99304}">
+      <controltype>1</controltype>
+      <formid>{852576b2-652b-42e6-9333-4c2ef34eddfb}</formid>
+      <scope>1</scope>
+      <controlname>mctools_valuetype</controlname>
+      <event>change</event>
+      <iscustomizable>1</iscustomizable>
+      <primaryentitytypecode>mctools_parameter</primaryentitytypecode>
+    </ProcessTrigger>
+    <ProcessTrigger processtriggerid="{3e9a5d88-ff74-e611-80f0-00155dc99304}">
+      <formid>{852576b2-652b-42e6-9333-4c2ef34eddfb}</formid>
+      <scope>1</scope>
+      <event>load</event>
+      <iscustomizable>1</iscustomizable>
+      <primaryentitytypecode>mctools_parameter</primaryentitytypecode>
+    </ProcessTrigger>
+    <ProcessTrigger processtriggerid="{3f9a5d88-ff74-e611-80f0-00155dc99304}">
+      <controltype>1</controltype>
+      <formid>{852576b2-652b-42e6-9333-4c2ef34eddfb}</formid>
+      <scope>1</scope>
+      <controlname>mctools_valuetype</controlname>
+      <event>change</event>
+      <iscustomizable>1</iscustomizable>
+      <primaryentitytypecode>mctools_parameter</primaryentitytypecode>
+    </ProcessTrigger>
+    <ProcessTrigger processtriggerid="{409a5d88-ff74-e611-80f0-00155dc99304}">
+      <formid>{852576b2-652b-42e6-9333-4c2ef34eddfb}</formid>
+      <scope>1</scope>
+      <event>load</event>
+      <iscustomizable>1</iscustomizable>
+      <primaryentitytypecode>mctools_parameter</primaryentitytypecode>
+    </ProcessTrigger>
+    <ProcessTrigger processtriggerid="{419a5d88-ff74-e611-80f0-00155dc99304}">
+      <controltype>1</controltype>
+      <formid>{852576b2-652b-42e6-9333-4c2ef34eddfb}</formid>
+      <scope>1</scope>
+      <controlname>mctools_valuetype</controlname>
+      <event>change</event>
+      <iscustomizable>1</iscustomizable>
+      <primaryentitytypecode>mctools_parameter</primaryentitytypecode>
+    </ProcessTrigger>
+    <ProcessTrigger processtriggerid="{429a5d88-ff74-e611-80f0-00155dc99304}">
+      <formid>{852576b2-652b-42e6-9333-4c2ef34eddfb}</formid>
+      <scope>1</scope>
+      <event>load</event>
+      <iscustomizable>1</iscustomizable>
+      <primaryentitytypecode>mctools_parameter</primaryentitytypecode>
+    </ProcessTrigger>
+    <ProcessTrigger processtriggerid="{439a5d88-ff74-e611-80f0-00155dc99304}">
+      <controltype>1</controltype>
+      <formid>{852576b2-652b-42e6-9333-4c2ef34eddfb}</formid>
+      <scope>1</scope>
+      <controlname>mctools_valuetype</controlname>
+      <event>change</event>
+      <iscustomizable>1</iscustomizable>
+      <primaryentitytypecode>mctools_parameter</primaryentitytypecode>
+    </ProcessTrigger>
+    <ProcessTrigger processtriggerid="{449a5d88-ff74-e611-80f0-00155dc99304}">
+      <formid>{852576b2-652b-42e6-9333-4c2ef34eddfb}</formid>
+      <scope>1</scope>
+      <event>load</event>
+      <iscustomizable>1</iscustomizable>
+      <primaryentitytypecode>mctools_parameter</primaryentitytypecode>
+    </ProcessTrigger>
+  </ProcessTriggers>
+</Workflow>

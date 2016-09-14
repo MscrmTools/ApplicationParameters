@@ -1,63 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <EntityRelationships>
-  <EntityRelationship Name="mctools_parametercategory_AsyncOperations">
-    <EntityRelationshipType>OneToMany</EntityRelationshipType>
-    <IsCustomizable>1</IsCustomizable>
-    <IntroducedVersion>1.3.0.1</IntroducedVersion>
-    <IsHierarchical>0</IsHierarchical>
-    <ReferencingEntityName>AsyncOperation</ReferencingEntityName>
-    <ReferencedEntityName>mctools_parametercategory</ReferencedEntityName>
-    <CascadeAssign>NoCascade</CascadeAssign>
-    <CascadeDelete>NoCascade</CascadeDelete>
-    <CascadeReparent>NoCascade</CascadeReparent>
-    <CascadeShare>NoCascade</CascadeShare>
-    <CascadeUnshare>NoCascade</CascadeUnshare>
-    <ReferencingAttributeName>RegardingObjectId</ReferencingAttributeName>
-    <RelationshipDescription>
-      <Descriptions>
-        <Description description="Identificateur unique de l'objet auquel la tâche système est associée." languagecode="1036" />
-        <Description description="Unique identifier of the object with which the system job is associated." languagecode="1033" />
-      </Descriptions>
-    </RelationshipDescription>
-    <field name="regardingobjectid" requiredlevel="none" imemode="auto" lookupstyle="single" lookupbrowse="0" format="regarding">
-      <IsSecured>0</IsSecured>
-      <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
-      <IsAuditEnabled>0</IsAuditEnabled>
-      <displaynames>
-        <displayname description="Concernant" languagecode="1036" />
-        <displayname description="Regarding" languagecode="1033" />
-      </displaynames>
-    </field>
-  </EntityRelationship>
-  <EntityRelationship Name="mctools_parametercategory_BulkDeleteFailures">
-    <EntityRelationshipType>OneToMany</EntityRelationshipType>
-    <IsCustomizable>1</IsCustomizable>
-    <IntroducedVersion>1.3.0.1</IntroducedVersion>
-    <IsHierarchical>0</IsHierarchical>
-    <ReferencingEntityName>BulkDeleteFailure</ReferencingEntityName>
-    <ReferencedEntityName>mctools_parametercategory</ReferencedEntityName>
-    <CascadeAssign>NoCascade</CascadeAssign>
-    <CascadeDelete>Cascade</CascadeDelete>
-    <CascadeReparent>NoCascade</CascadeReparent>
-    <CascadeShare>NoCascade</CascadeShare>
-    <CascadeUnshare>NoCascade</CascadeUnshare>
-    <ReferencingAttributeName>RegardingObjectId</ReferencingAttributeName>
-    <RelationshipDescription>
-      <Descriptions>
-        <Description description="Identificateur unique de l'enregistrement qui ne peut pas être supprimé." languagecode="1036" />
-        <Description description="Unique identifier of the record that can not be deleted." languagecode="1033" />
-      </Descriptions>
-    </RelationshipDescription>
-    <field name="regardingobjectid" requiredlevel="none" imemode="auto" lookupstyle="single" lookupbrowse="0" format="regarding">
-      <IsSecured>0</IsSecured>
-      <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
-      <IsAuditEnabled>0</IsAuditEnabled>
-      <displaynames>
-        <displayname description="Nom" languagecode="1036" />
-        <displayname description="Name" languagecode="1033" />
-      </displaynames>
-    </field>
-  </EntityRelationship>
   <EntityRelationship Name="mctools_parametercategory_mctools_parameter">
     <EntityRelationshipType>OneToMany</EntityRelationshipType>
     <IsCustomizable>1</IsCustomizable>
@@ -74,119 +16,25 @@
     <ReferencingAttributeName>mctools_parametercategoryid</ReferencingAttributeName>
     <RelationshipDescription>
       <Descriptions>
-        <Description description="Identificateur unique de Catégorie de paramètres associé à Paramètre." languagecode="1036" />
         <Description description="Unique identifier of Parameter Category associated to Parameter" languagecode="1033" />
+        <Description description="Identificateur unique de Catégorie de paramètres associé à Paramètre." languagecode="1036" />
       </Descriptions>
     </RelationshipDescription>
-    <field name="mctools_parametercategoryid" requiredlevel="none" lookupstyle="single" lookupbrowse="0" format="">
-      <IsCustomizable>1</IsCustomizable>
-      <IsRenameable>1</IsRenameable>
-      <CanModifySearchSettings>1</CanModifySearchSettings>
-      <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
-      <IsSecured>0</IsSecured>
-      <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
-      <IsAuditEnabled>1</IsAuditEnabled>
-      <displaynames>
-        <displayname description="Catégorie" languagecode="1036" />
-        <displayname description="Category" languagecode="1033" />
-      </displaynames>
-    </field>
     <EntityRelationshipRoles>
       <EntityRelationshipRole>
         <NavPaneDisplayOption>UseCollectionName</NavPaneDisplayOption>
         <NavPaneArea>Details</NavPaneArea>
         <NavPaneOrder>10000</NavPaneOrder>
+        <NavigationPropertyName>mctools_parametercategoryid</NavigationPropertyName>
         <CustomLabels>
           <CustomLabel description="" languagecode="1036" />
         </CustomLabels>
+        <RelationshipRoleType>1</RelationshipRoleType>
+      </EntityRelationshipRole>
+      <EntityRelationshipRole>
+        <NavigationPropertyName>mctools_parametercategory_mctools_parameter</NavigationPropertyName>
+        <RelationshipRoleType>0</RelationshipRoleType>
       </EntityRelationshipRole>
     </EntityRelationshipRoles>
-  </EntityRelationship>
-  <EntityRelationship Name="mctools_parametercategory_PrincipalObjectAttributeAccesses">
-    <EntityRelationshipType>OneToMany</EntityRelationshipType>
-    <IsCustomizable>1</IsCustomizable>
-    <IntroducedVersion>1.3.0.1</IntroducedVersion>
-    <IsHierarchical>0</IsHierarchical>
-    <ReferencingEntityName>PrincipalObjectAttributeAccess</ReferencingEntityName>
-    <ReferencedEntityName>mctools_parametercategory</ReferencedEntityName>
-    <CascadeAssign>NoCascade</CascadeAssign>
-    <CascadeDelete>Cascade</CascadeDelete>
-    <CascadeReparent>NoCascade</CascadeReparent>
-    <CascadeShare>NoCascade</CascadeShare>
-    <CascadeUnshare>NoCascade</CascadeUnshare>
-    <ReferencingAttributeName>ObjectId</ReferencingAttributeName>
-    <RelationshipDescription>
-      <Descriptions>
-        <Description description="Identificateur unique de l’instance d’entité avec champ sécurisé partagé" languagecode="1036" />
-        <Description description="Unique identifier of the entity instance with shared secured field" languagecode="1033" />
-      </Descriptions>
-    </RelationshipDescription>
-    <field name="objectid" requiredlevel="systemrequired" imemode="auto" lookupstyle="single" lookupbrowse="0" format="regarding">
-      <IsSecured>0</IsSecured>
-      <DisplayMask>ValidForForm|ValidForGrid</DisplayMask>
-      <IsAuditEnabled>1</IsAuditEnabled>
-      <displaynames>
-        <displayname description="Instance d’entité" languagecode="1036" />
-        <displayname description="Entity instance" languagecode="1033" />
-      </displaynames>
-    </field>
-  </EntityRelationship>
-  <EntityRelationship Name="mctools_parametercategory_ProcessSession">
-    <EntityRelationshipType>OneToMany</EntityRelationshipType>
-    <IsCustomizable>1</IsCustomizable>
-    <IntroducedVersion>1.3.0.1</IntroducedVersion>
-    <IsHierarchical>0</IsHierarchical>
-    <ReferencingEntityName>ProcessSession</ReferencingEntityName>
-    <ReferencedEntityName>mctools_parametercategory</ReferencedEntityName>
-    <CascadeAssign>NoCascade</CascadeAssign>
-    <CascadeDelete>NoCascade</CascadeDelete>
-    <CascadeReparent>NoCascade</CascadeReparent>
-    <CascadeShare>NoCascade</CascadeShare>
-    <CascadeUnshare>NoCascade</CascadeUnshare>
-    <ReferencingAttributeName>RegardingObjectId</ReferencingAttributeName>
-    <RelationshipDescription>
-      <Descriptions>
-        <Description description="Unique identifier of the object with which the dialog session is associated." languagecode="1033" />
-        <Description description="Identificateur unique de l’objet avec lequel est associée la session de dialogue." languagecode="1036" />
-      </Descriptions>
-    </RelationshipDescription>
-    <field name="regardingobjectid" requiredlevel="none" imemode="auto" lookupstyle="single" lookupbrowse="0" format="regarding">
-      <IsSecured>0</IsSecured>
-      <DisplayMask>ValidForAdvancedFind|ValidForGrid</DisplayMask>
-      <IsAuditEnabled>0</IsAuditEnabled>
-      <displaynames>
-        <displayname description="Concernant" languagecode="1036" />
-        <displayname description="Regarding" languagecode="1033" />
-      </displaynames>
-    </field>
-  </EntityRelationship>
-  <EntityRelationship Name="mctools_parametercategory_UserEntityInstanceDatas">
-    <EntityRelationshipType>OneToMany</EntityRelationshipType>
-    <IsCustomizable>1</IsCustomizable>
-    <IntroducedVersion>1.3.0.1</IntroducedVersion>
-    <IsHierarchical>0</IsHierarchical>
-    <ReferencingEntityName>UserEntityInstanceData</ReferencingEntityName>
-    <ReferencedEntityName>mctools_parametercategory</ReferencedEntityName>
-    <CascadeAssign>NoCascade</CascadeAssign>
-    <CascadeDelete>Cascade</CascadeDelete>
-    <CascadeReparent>NoCascade</CascadeReparent>
-    <CascadeShare>NoCascade</CascadeShare>
-    <CascadeUnshare>NoCascade</CascadeUnshare>
-    <ReferencingAttributeName>ObjectId</ReferencingAttributeName>
-    <RelationshipDescription>
-      <Descriptions>
-        <Description description="Identificateur unique de l’enregistrement source." languagecode="1036" />
-        <Description description="Unique identifier of the source record." languagecode="1033" />
-      </Descriptions>
-    </RelationshipDescription>
-    <field name="objectid" requiredlevel="systemrequired" imemode="auto" lookupstyle="single" lookupbrowse="0" format="">
-      <IsSecured>0</IsSecured>
-      <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid|RequiredForForm</DisplayMask>
-      <IsAuditEnabled>1</IsAuditEnabled>
-      <displaynames>
-        <displayname description="ID d’objet" languagecode="1036" />
-        <displayname description="Object Id" languagecode="1033" />
-      </displaynames>
-    </field>
   </EntityRelationship>
 </EntityRelationships>

@@ -1,0 +1,485 @@
+<Activity x:Class="XrmWorkflow28abf1a1fd74e61180f000155dc99304" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mcwc="clr-namespace:Microsoft.Crm.Workflow.ClientActivities;assembly=Microsoft.Crm.Workflow, Version=8.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" xmlns:mxs="clr-namespace:Microsoft.Xrm.Sdk;assembly=Microsoft.Xrm.Sdk, Version=8.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" xmlns:mxsq="clr-namespace:Microsoft.Xrm.Sdk.Query;assembly=Microsoft.Xrm.Sdk, Version=8.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" xmlns:mxswa="clr-namespace:Microsoft.Xrm.Sdk.Workflow.Activities;assembly=Microsoft.Xrm.Sdk.Workflow, Version=8.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" xmlns:s="clr-namespace:System;assembly=mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" xmlns:srs="clr-namespace:System.Runtime.Serialization;assembly=System.Runtime.Serialization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" xmlns:this="clr-namespace:" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="InputEntities" Type="InArgument(scg:IDictionary(x:String, mxs:Entity))" />
+    <x:Property Name="CreatedEntities" Type="InArgument(scg:IDictionary(x:String, mxs:Entity))" />
+  </x:Members>
+  <this:XrmWorkflow28abf1a1fd74e61180f000155dc99304.InputEntities>
+    <InArgument x:TypeArguments="scg:IDictionary(x:String, mxs:Entity)" />
+  </this:XrmWorkflow28abf1a1fd74e61180f000155dc99304.InputEntities>
+  <this:XrmWorkflow28abf1a1fd74e61180f000155dc99304.CreatedEntities>
+    <InArgument x:TypeArguments="scg:IDictionary(x:String, mxs:Entity)" />
+  </this:XrmWorkflow28abf1a1fd74e61180f000155dc99304.CreatedEntities>
+  <mva:VisualBasic.Settings>Assembly references and imported namespaces for internal implementation</mva:VisualBasic.Settings>
+  <mxswa:Workflow>
+    <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.ConditionSequence, Microsoft.Crm.Workflow, Version=8.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="ConditionStep1">
+      <mxswa:ActivityReference.Arguments>
+        <InArgument x:TypeArguments="x:Boolean" x:Key="Wait">False</InArgument>
+      </mxswa:ActivityReference.Arguments>
+      <mxswa:ActivityReference.Properties>
+        <sco:Collection x:TypeArguments="Variable" x:Key="Variables">
+          <Variable x:TypeArguments="x:Boolean" Default="False" Name="ConditionBranchStep2_condition" />
+          <Variable x:TypeArguments="x:Object" Name="ConditionBranchStep2_1" />
+          <Variable x:TypeArguments="x:Object" Name="ConditionBranchStep2_2" />
+          <Variable x:TypeArguments="x:Boolean" Default="False" Name="ConditionBranchStep11_condition" />
+          <Variable x:TypeArguments="x:Object" Name="ConditionBranchStep11_1" />
+          <Variable x:TypeArguments="x:Object" Name="ConditionBranchStep11_2" />
+          <Variable x:TypeArguments="x:Boolean" Default="False" Name="ConditionBranchStep21_condition" />
+          <Variable x:TypeArguments="x:Object" Name="ConditionBranchStep21_1" />
+          <Variable x:TypeArguments="x:Object" Name="ConditionBranchStep21_2" />
+          <Variable x:TypeArguments="x:Boolean" Default="False" Name="ConditionBranchStep29_condition" />
+          <Variable x:TypeArguments="x:Object" Name="ConditionBranchStep29_1" />
+          <Variable x:TypeArguments="x:Object" Name="ConditionBranchStep29_2" />
+          <Variable x:TypeArguments="x:Boolean" Default="False" Name="ConditionBranchStep37_condition" />
+          <Variable x:TypeArguments="x:Object" Name="ConditionBranchStep37_1" />
+          <Variable x:TypeArguments="x:Object" Name="ConditionBranchStep37_2" />
+          <Variable x:TypeArguments="x:Boolean" Default="False" Name="ConditionBranchStep45_condition" />
+          <Variable x:TypeArguments="x:Object" Name="ConditionBranchStep45_1" />
+          <Variable x:TypeArguments="x:Object" Name="ConditionBranchStep45_2" />
+          <Variable x:TypeArguments="x:Boolean" Default="False" Name="ConditionBranchStep46_condition" />
+          <Variable x:TypeArguments="x:Object" Name="ConditionBranchStep46_1" />
+          <Variable x:TypeArguments="x:Object" Name="ConditionBranchStep46_2" />
+        </sco:Collection>
+        <sco:Collection x:TypeArguments="Activity" x:Key="Activities">
+          <mxswa:GetEntityProperty Attribute="mctools_valuetype" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="mctools_parameter" Value="[ConditionBranchStep2_1]">
+            <mxswa:GetEntityProperty.TargetType>
+              <InArgument x:TypeArguments="s:Type">
+                <mxswa:ReferenceLiteral x:TypeArguments="s:Type">
+                  <x:Null />
+                </mxswa:ReferenceLiteral>
+              </InArgument>
+            </mxswa:GetEntityProperty.TargetType>
+          </mxswa:GetEntityProperty>
+          <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.EvaluateExpression, Microsoft.Crm.Workflow, Version=8.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="EvaluateExpression">
+            <mxswa:ActivityReference.Arguments>
+              <InArgument x:TypeArguments="x:String" x:Key="ExpressionOperator">CreateCrmType</InArgument>
+              <InArgument x:TypeArguments="s:Object[]" x:Key="Parameters">[New Object() { Microsoft.Xrm.Sdk.Workflow.WorkflowPropertyType.OptionSetValue, "1", "Picklist" }]</InArgument>
+              <InArgument x:TypeArguments="s:Type" x:Key="TargetType">
+                <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="mxs:OptionSetValue" />
+              </InArgument>
+              <OutArgument x:TypeArguments="x:Object" x:Key="Result">[ConditionBranchStep2_2]</OutArgument>
+            </mxswa:ActivityReference.Arguments>
+          </mxswa:ActivityReference>
+          <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.EvaluateCondition, Microsoft.Crm.Workflow, Version=8.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="EvaluateCondition">
+            <mxswa:ActivityReference.Arguments>
+              <InArgument x:TypeArguments="mxsq:ConditionOperator" x:Key="ConditionOperator">Equal</InArgument>
+              <InArgument x:TypeArguments="s:Object[]" x:Key="Parameters">[New Object() { ConditionBranchStep2_2 }]</InArgument>
+              <InArgument x:TypeArguments="x:Object" x:Key="Operand">[ConditionBranchStep2_1]</InArgument>
+              <OutArgument x:TypeArguments="x:Boolean" x:Key="Result">[ConditionBranchStep2_condition]</OutArgument>
+            </mxswa:ActivityReference.Arguments>
+          </mxswa:ActivityReference>
+          <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.ConditionBranch, Microsoft.Crm.Workflow, Version=8.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="ConditionBranchStep2">
+            <mxswa:ActivityReference.Arguments>
+              <InArgument x:TypeArguments="x:Boolean" x:Key="Condition">[ConditionBranchStep2_condition]</InArgument>
+            </mxswa:ActivityReference.Arguments>
+            <mxswa:ActivityReference.Properties>
+              <mxswa:ActivityReference x:Key="Then" AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.Composite, Microsoft.Crm.Workflow, Version=8.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="ConditionBranchStep2">
+                <mxswa:ActivityReference.Properties>
+                  <sco:Collection x:TypeArguments="Variable" x:Key="Variables" />
+                  <sco:Collection x:TypeArguments="Activity" x:Key="Activities">
+                    <Sequence DisplayName="SetVisibilityStep19">
+                      <mcwc:SetVisibility ControlId="mctools_boolvalue" ControlType="standard" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="mctools_parameter" IsVisible="False" />
+                    </Sequence>
+                    <Sequence DisplayName="SetVisibilityStep6">
+                      <mcwc:SetVisibility ControlId="mctools_datevalue" ControlType="standard" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="mctools_parameter" IsVisible="False" />
+                    </Sequence>
+                    <Sequence DisplayName="SetVisibilityStep7">
+                      <mcwc:SetVisibility ControlId="mctools_decimalvalue" ControlType="standard" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="mctools_parameter" IsVisible="False" />
+                    </Sequence>
+                    <Sequence DisplayName="SetVisibilityStep8">
+                      <mcwc:SetVisibility ControlId="mctools_integervalue" ControlType="standard" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="mctools_parameter" IsVisible="False" />
+                    </Sequence>
+                    <Sequence DisplayName="SetVisibilityStep9">
+                      <mcwc:SetVisibility ControlId="mctools_floatvalue" ControlType="standard" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="mctools_parameter" IsVisible="False" />
+                    </Sequence>
+                    <Sequence DisplayName="SetVisibilityStep10">
+                      <mcwc:SetVisibility ControlId="mctools_memovalue" ControlType="standard" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="mctools_parameter" IsVisible="False" />
+                    </Sequence>
+                    <Sequence DisplayName="SetVisibilityStep5">
+                      <mcwc:SetVisibility ControlId="mctools_textvalue" ControlType="standard" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="mctools_parameter" IsVisible="True" />
+                    </Sequence>
+                  </sco:Collection>
+                </mxswa:ActivityReference.Properties>
+              </mxswa:ActivityReference>
+              <x:Null x:Key="Else" />
+            </mxswa:ActivityReference.Properties>
+          </mxswa:ActivityReference>
+          <mxswa:GetEntityProperty Attribute="mctools_valuetype" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="mctools_parameter" Value="[ConditionBranchStep11_1]">
+            <mxswa:GetEntityProperty.TargetType>
+              <InArgument x:TypeArguments="s:Type">
+                <mxswa:ReferenceLiteral x:TypeArguments="s:Type">
+                  <x:Null />
+                </mxswa:ReferenceLiteral>
+              </InArgument>
+            </mxswa:GetEntityProperty.TargetType>
+          </mxswa:GetEntityProperty>
+          <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.EvaluateExpression, Microsoft.Crm.Workflow, Version=8.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="EvaluateExpression">
+            <mxswa:ActivityReference.Arguments>
+              <InArgument x:TypeArguments="x:String" x:Key="ExpressionOperator">CreateCrmType</InArgument>
+              <InArgument x:TypeArguments="s:Object[]" x:Key="Parameters">[New Object() { Microsoft.Xrm.Sdk.Workflow.WorkflowPropertyType.OptionSetValue, "2", "Picklist" }]</InArgument>
+              <InArgument x:TypeArguments="s:Type" x:Key="TargetType">
+                <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="mxs:OptionSetValue" />
+              </InArgument>
+              <OutArgument x:TypeArguments="x:Object" x:Key="Result">[ConditionBranchStep11_2]</OutArgument>
+            </mxswa:ActivityReference.Arguments>
+          </mxswa:ActivityReference>
+          <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.EvaluateCondition, Microsoft.Crm.Workflow, Version=8.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="EvaluateCondition">
+            <mxswa:ActivityReference.Arguments>
+              <InArgument x:TypeArguments="mxsq:ConditionOperator" x:Key="ConditionOperator">Equal</InArgument>
+              <InArgument x:TypeArguments="s:Object[]" x:Key="Parameters">[New Object() { ConditionBranchStep11_2 }]</InArgument>
+              <InArgument x:TypeArguments="x:Object" x:Key="Operand">[ConditionBranchStep11_1]</InArgument>
+              <OutArgument x:TypeArguments="x:Boolean" x:Key="Result">[ConditionBranchStep11_condition]</OutArgument>
+            </mxswa:ActivityReference.Arguments>
+          </mxswa:ActivityReference>
+          <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.ConditionBranch, Microsoft.Crm.Workflow, Version=8.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="ConditionBranchStep11">
+            <mxswa:ActivityReference.Arguments>
+              <InArgument x:TypeArguments="x:Boolean" x:Key="Condition">[ConditionBranchStep11_condition]</InArgument>
+            </mxswa:ActivityReference.Arguments>
+            <mxswa:ActivityReference.Properties>
+              <mxswa:ActivityReference x:Key="Then" AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.Composite, Microsoft.Crm.Workflow, Version=8.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="ConditionBranchStep11">
+                <mxswa:ActivityReference.Properties>
+                  <sco:Collection x:TypeArguments="Variable" x:Key="Variables" />
+                  <sco:Collection x:TypeArguments="Activity" x:Key="Activities">
+                    <Sequence DisplayName="SetVisibilityStep12">
+                      <mcwc:SetVisibility ControlId="mctools_boolvalue" ControlType="standard" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="mctools_parameter" IsVisible="False" />
+                    </Sequence>
+                    <Sequence DisplayName="SetVisibilityStep13">
+                      <mcwc:SetVisibility ControlId="mctools_datevalue" ControlType="standard" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="mctools_parameter" IsVisible="False" />
+                    </Sequence>
+                    <Sequence DisplayName="SetVisibilityStep14">
+                      <mcwc:SetVisibility ControlId="mctools_decimalvalue" ControlType="standard" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="mctools_parameter" IsVisible="False" />
+                    </Sequence>
+                    <Sequence DisplayName="SetVisibilityStep15">
+                      <mcwc:SetVisibility ControlId="mctools_integervalue" ControlType="standard" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="mctools_parameter" IsVisible="False" />
+                    </Sequence>
+                    <Sequence DisplayName="SetVisibilityStep16">
+                      <mcwc:SetVisibility ControlId="mctools_floatvalue" ControlType="standard" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="mctools_parameter" IsVisible="False" />
+                    </Sequence>
+                    <Sequence DisplayName="SetVisibilityStep17">
+                      <mcwc:SetVisibility ControlId="mctools_memovalue" ControlType="standard" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="mctools_parameter" IsVisible="True" />
+                    </Sequence>
+                    <Sequence DisplayName="SetVisibilityStep18">
+                      <mcwc:SetVisibility ControlId="mctools_textvalue" ControlType="standard" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="mctools_parameter" IsVisible="False" />
+                    </Sequence>
+                  </sco:Collection>
+                </mxswa:ActivityReference.Properties>
+              </mxswa:ActivityReference>
+              <x:Null x:Key="Else" />
+            </mxswa:ActivityReference.Properties>
+          </mxswa:ActivityReference>
+          <mxswa:GetEntityProperty Attribute="mctools_valuetype" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="mctools_parameter" Value="[ConditionBranchStep21_1]">
+            <mxswa:GetEntityProperty.TargetType>
+              <InArgument x:TypeArguments="s:Type">
+                <mxswa:ReferenceLiteral x:TypeArguments="s:Type">
+                  <x:Null />
+                </mxswa:ReferenceLiteral>
+              </InArgument>
+            </mxswa:GetEntityProperty.TargetType>
+          </mxswa:GetEntityProperty>
+          <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.EvaluateExpression, Microsoft.Crm.Workflow, Version=8.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="EvaluateExpression">
+            <mxswa:ActivityReference.Arguments>
+              <InArgument x:TypeArguments="x:String" x:Key="ExpressionOperator">CreateCrmType</InArgument>
+              <InArgument x:TypeArguments="s:Object[]" x:Key="Parameters">[New Object() { Microsoft.Xrm.Sdk.Workflow.WorkflowPropertyType.OptionSetValue, "3", "Picklist" }]</InArgument>
+              <InArgument x:TypeArguments="s:Type" x:Key="TargetType">
+                <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="mxs:OptionSetValue" />
+              </InArgument>
+              <OutArgument x:TypeArguments="x:Object" x:Key="Result">[ConditionBranchStep21_2]</OutArgument>
+            </mxswa:ActivityReference.Arguments>
+          </mxswa:ActivityReference>
+          <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.EvaluateCondition, Microsoft.Crm.Workflow, Version=8.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="EvaluateCondition">
+            <mxswa:ActivityReference.Arguments>
+              <InArgument x:TypeArguments="mxsq:ConditionOperator" x:Key="ConditionOperator">Equal</InArgument>
+              <InArgument x:TypeArguments="s:Object[]" x:Key="Parameters">[New Object() { ConditionBranchStep21_2 }]</InArgument>
+              <InArgument x:TypeArguments="x:Object" x:Key="Operand">[ConditionBranchStep21_1]</InArgument>
+              <OutArgument x:TypeArguments="x:Boolean" x:Key="Result">[ConditionBranchStep21_condition]</OutArgument>
+            </mxswa:ActivityReference.Arguments>
+          </mxswa:ActivityReference>
+          <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.ConditionBranch, Microsoft.Crm.Workflow, Version=8.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="ConditionBranchStep21">
+            <mxswa:ActivityReference.Arguments>
+              <InArgument x:TypeArguments="x:Boolean" x:Key="Condition">[ConditionBranchStep21_condition]</InArgument>
+            </mxswa:ActivityReference.Arguments>
+            <mxswa:ActivityReference.Properties>
+              <mxswa:ActivityReference x:Key="Then" AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.Composite, Microsoft.Crm.Workflow, Version=8.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="ConditionBranchStep21">
+                <mxswa:ActivityReference.Properties>
+                  <sco:Collection x:TypeArguments="Variable" x:Key="Variables" />
+                  <sco:Collection x:TypeArguments="Activity" x:Key="Activities">
+                    <Sequence DisplayName="SetVisibilityStep22">
+                      <mcwc:SetVisibility ControlId="mctools_boolvalue" ControlType="standard" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="mctools_parameter" IsVisible="True" />
+                    </Sequence>
+                    <Sequence DisplayName="SetVisibilityStep23">
+                      <mcwc:SetVisibility ControlId="mctools_datevalue" ControlType="standard" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="mctools_parameter" IsVisible="False" />
+                    </Sequence>
+                    <Sequence DisplayName="SetVisibilityStep24">
+                      <mcwc:SetVisibility ControlId="mctools_decimalvalue" ControlType="standard" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="mctools_parameter" IsVisible="False" />
+                    </Sequence>
+                    <Sequence DisplayName="SetVisibilityStep25">
+                      <mcwc:SetVisibility ControlId="mctools_integervalue" ControlType="standard" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="mctools_parameter" IsVisible="False" />
+                    </Sequence>
+                    <Sequence DisplayName="SetVisibilityStep26">
+                      <mcwc:SetVisibility ControlId="mctools_floatvalue" ControlType="standard" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="mctools_parameter" IsVisible="False" />
+                    </Sequence>
+                    <Sequence DisplayName="SetVisibilityStep27">
+                      <mcwc:SetVisibility ControlId="mctools_memovalue" ControlType="standard" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="mctools_parameter" IsVisible="False" />
+                    </Sequence>
+                    <Sequence DisplayName="SetVisibilityStep28">
+                      <mcwc:SetVisibility ControlId="mctools_textvalue" ControlType="standard" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="mctools_parameter" IsVisible="False" />
+                    </Sequence>
+                  </sco:Collection>
+                </mxswa:ActivityReference.Properties>
+              </mxswa:ActivityReference>
+              <x:Null x:Key="Else" />
+            </mxswa:ActivityReference.Properties>
+          </mxswa:ActivityReference>
+          <mxswa:GetEntityProperty Attribute="mctools_valuetype" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="mctools_parameter" Value="[ConditionBranchStep29_1]">
+            <mxswa:GetEntityProperty.TargetType>
+              <InArgument x:TypeArguments="s:Type">
+                <mxswa:ReferenceLiteral x:TypeArguments="s:Type">
+                  <x:Null />
+                </mxswa:ReferenceLiteral>
+              </InArgument>
+            </mxswa:GetEntityProperty.TargetType>
+          </mxswa:GetEntityProperty>
+          <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.EvaluateExpression, Microsoft.Crm.Workflow, Version=8.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="EvaluateExpression">
+            <mxswa:ActivityReference.Arguments>
+              <InArgument x:TypeArguments="x:String" x:Key="ExpressionOperator">CreateCrmType</InArgument>
+              <InArgument x:TypeArguments="s:Object[]" x:Key="Parameters">[New Object() { Microsoft.Xrm.Sdk.Workflow.WorkflowPropertyType.OptionSetValue, "4", "Picklist" }]</InArgument>
+              <InArgument x:TypeArguments="s:Type" x:Key="TargetType">
+                <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="mxs:OptionSetValue" />
+              </InArgument>
+              <OutArgument x:TypeArguments="x:Object" x:Key="Result">[ConditionBranchStep29_2]</OutArgument>
+            </mxswa:ActivityReference.Arguments>
+          </mxswa:ActivityReference>
+          <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.EvaluateCondition, Microsoft.Crm.Workflow, Version=8.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="EvaluateCondition">
+            <mxswa:ActivityReference.Arguments>
+              <InArgument x:TypeArguments="mxsq:ConditionOperator" x:Key="ConditionOperator">Equal</InArgument>
+              <InArgument x:TypeArguments="s:Object[]" x:Key="Parameters">[New Object() { ConditionBranchStep29_2 }]</InArgument>
+              <InArgument x:TypeArguments="x:Object" x:Key="Operand">[ConditionBranchStep29_1]</InArgument>
+              <OutArgument x:TypeArguments="x:Boolean" x:Key="Result">[ConditionBranchStep29_condition]</OutArgument>
+            </mxswa:ActivityReference.Arguments>
+          </mxswa:ActivityReference>
+          <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.ConditionBranch, Microsoft.Crm.Workflow, Version=8.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="ConditionBranchStep29">
+            <mxswa:ActivityReference.Arguments>
+              <InArgument x:TypeArguments="x:Boolean" x:Key="Condition">[ConditionBranchStep29_condition]</InArgument>
+            </mxswa:ActivityReference.Arguments>
+            <mxswa:ActivityReference.Properties>
+              <mxswa:ActivityReference x:Key="Then" AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.Composite, Microsoft.Crm.Workflow, Version=8.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="ConditionBranchStep29">
+                <mxswa:ActivityReference.Properties>
+                  <sco:Collection x:TypeArguments="Variable" x:Key="Variables" />
+                  <sco:Collection x:TypeArguments="Activity" x:Key="Activities">
+                    <Sequence DisplayName="SetVisibilityStep30">
+                      <mcwc:SetVisibility ControlId="mctools_boolvalue" ControlType="standard" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="mctools_parameter" IsVisible="False" />
+                    </Sequence>
+                    <Sequence DisplayName="SetVisibilityStep31">
+                      <mcwc:SetVisibility ControlId="mctools_datevalue" ControlType="standard" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="mctools_parameter" IsVisible="False" />
+                    </Sequence>
+                    <Sequence DisplayName="SetVisibilityStep32">
+                      <mcwc:SetVisibility ControlId="mctools_decimalvalue" ControlType="standard" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="mctools_parameter" IsVisible="False" />
+                    </Sequence>
+                    <Sequence DisplayName="SetVisibilityStep33">
+                      <mcwc:SetVisibility ControlId="mctools_integervalue" ControlType="standard" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="mctools_parameter" IsVisible="True" />
+                    </Sequence>
+                    <Sequence DisplayName="SetVisibilityStep34">
+                      <mcwc:SetVisibility ControlId="mctools_floatvalue" ControlType="standard" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="mctools_parameter" IsVisible="False" />
+                    </Sequence>
+                    <Sequence DisplayName="SetVisibilityStep35">
+                      <mcwc:SetVisibility ControlId="mctools_memovalue" ControlType="standard" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="mctools_parameter" IsVisible="False" />
+                    </Sequence>
+                    <Sequence DisplayName="SetVisibilityStep36">
+                      <mcwc:SetVisibility ControlId="mctools_textvalue" ControlType="standard" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="mctools_parameter" IsVisible="False" />
+                    </Sequence>
+                  </sco:Collection>
+                </mxswa:ActivityReference.Properties>
+              </mxswa:ActivityReference>
+              <x:Null x:Key="Else" />
+            </mxswa:ActivityReference.Properties>
+          </mxswa:ActivityReference>
+          <mxswa:GetEntityProperty Attribute="mctools_valuetype" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="mctools_parameter" Value="[ConditionBranchStep37_1]">
+            <mxswa:GetEntityProperty.TargetType>
+              <InArgument x:TypeArguments="s:Type">
+                <mxswa:ReferenceLiteral x:TypeArguments="s:Type">
+                  <x:Null />
+                </mxswa:ReferenceLiteral>
+              </InArgument>
+            </mxswa:GetEntityProperty.TargetType>
+          </mxswa:GetEntityProperty>
+          <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.EvaluateExpression, Microsoft.Crm.Workflow, Version=8.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="EvaluateExpression">
+            <mxswa:ActivityReference.Arguments>
+              <InArgument x:TypeArguments="x:String" x:Key="ExpressionOperator">CreateCrmType</InArgument>
+              <InArgument x:TypeArguments="s:Object[]" x:Key="Parameters">[New Object() { Microsoft.Xrm.Sdk.Workflow.WorkflowPropertyType.OptionSetValue, "5", "Picklist" }]</InArgument>
+              <InArgument x:TypeArguments="s:Type" x:Key="TargetType">
+                <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="mxs:OptionSetValue" />
+              </InArgument>
+              <OutArgument x:TypeArguments="x:Object" x:Key="Result">[ConditionBranchStep37_2]</OutArgument>
+            </mxswa:ActivityReference.Arguments>
+          </mxswa:ActivityReference>
+          <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.EvaluateCondition, Microsoft.Crm.Workflow, Version=8.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="EvaluateCondition">
+            <mxswa:ActivityReference.Arguments>
+              <InArgument x:TypeArguments="mxsq:ConditionOperator" x:Key="ConditionOperator">Equal</InArgument>
+              <InArgument x:TypeArguments="s:Object[]" x:Key="Parameters">[New Object() { ConditionBranchStep37_2 }]</InArgument>
+              <InArgument x:TypeArguments="x:Object" x:Key="Operand">[ConditionBranchStep37_1]</InArgument>
+              <OutArgument x:TypeArguments="x:Boolean" x:Key="Result">[ConditionBranchStep37_condition]</OutArgument>
+            </mxswa:ActivityReference.Arguments>
+          </mxswa:ActivityReference>
+          <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.ConditionBranch, Microsoft.Crm.Workflow, Version=8.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="ConditionBranchStep37">
+            <mxswa:ActivityReference.Arguments>
+              <InArgument x:TypeArguments="x:Boolean" x:Key="Condition">[ConditionBranchStep37_condition]</InArgument>
+            </mxswa:ActivityReference.Arguments>
+            <mxswa:ActivityReference.Properties>
+              <mxswa:ActivityReference x:Key="Then" AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.Composite, Microsoft.Crm.Workflow, Version=8.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="ConditionBranchStep37">
+                <mxswa:ActivityReference.Properties>
+                  <sco:Collection x:TypeArguments="Variable" x:Key="Variables" />
+                  <sco:Collection x:TypeArguments="Activity" x:Key="Activities">
+                    <Sequence DisplayName="SetVisibilityStep38">
+                      <mcwc:SetVisibility ControlId="mctools_boolvalue" ControlType="standard" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="mctools_parameter" IsVisible="False" />
+                    </Sequence>
+                    <Sequence DisplayName="SetVisibilityStep39">
+                      <mcwc:SetVisibility ControlId="mctools_datevalue" ControlType="standard" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="mctools_parameter" IsVisible="False" />
+                    </Sequence>
+                    <Sequence DisplayName="SetVisibilityStep40">
+                      <mcwc:SetVisibility ControlId="mctools_decimalvalue" ControlType="standard" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="mctools_parameter" IsVisible="True" />
+                    </Sequence>
+                    <Sequence DisplayName="SetVisibilityStep41">
+                      <mcwc:SetVisibility ControlId="mctools_integervalue" ControlType="standard" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="mctools_parameter" IsVisible="False" />
+                    </Sequence>
+                    <Sequence DisplayName="SetVisibilityStep42">
+                      <mcwc:SetVisibility ControlId="mctools_floatvalue" ControlType="standard" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="mctools_parameter" IsVisible="False" />
+                    </Sequence>
+                    <Sequence DisplayName="SetVisibilityStep43">
+                      <mcwc:SetVisibility ControlId="mctools_memovalue" ControlType="standard" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="mctools_parameter" IsVisible="False" />
+                    </Sequence>
+                    <Sequence DisplayName="SetVisibilityStep44">
+                      <mcwc:SetVisibility ControlId="mctools_textvalue" ControlType="standard" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="mctools_parameter" IsVisible="False" />
+                    </Sequence>
+                  </sco:Collection>
+                </mxswa:ActivityReference.Properties>
+              </mxswa:ActivityReference>
+              <x:Null x:Key="Else" />
+            </mxswa:ActivityReference.Properties>
+          </mxswa:ActivityReference>
+          <mxswa:GetEntityProperty Attribute="mctools_valuetype" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="mctools_parameter" Value="[ConditionBranchStep45_1]">
+            <mxswa:GetEntityProperty.TargetType>
+              <InArgument x:TypeArguments="s:Type">
+                <mxswa:ReferenceLiteral x:TypeArguments="s:Type">
+                  <x:Null />
+                </mxswa:ReferenceLiteral>
+              </InArgument>
+            </mxswa:GetEntityProperty.TargetType>
+          </mxswa:GetEntityProperty>
+          <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.EvaluateExpression, Microsoft.Crm.Workflow, Version=8.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="EvaluateExpression">
+            <mxswa:ActivityReference.Arguments>
+              <InArgument x:TypeArguments="x:String" x:Key="ExpressionOperator">CreateCrmType</InArgument>
+              <InArgument x:TypeArguments="s:Object[]" x:Key="Parameters">[New Object() { Microsoft.Xrm.Sdk.Workflow.WorkflowPropertyType.OptionSetValue, "6", "Picklist" }]</InArgument>
+              <InArgument x:TypeArguments="s:Type" x:Key="TargetType">
+                <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="mxs:OptionSetValue" />
+              </InArgument>
+              <OutArgument x:TypeArguments="x:Object" x:Key="Result">[ConditionBranchStep45_2]</OutArgument>
+            </mxswa:ActivityReference.Arguments>
+          </mxswa:ActivityReference>
+          <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.EvaluateCondition, Microsoft.Crm.Workflow, Version=8.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="EvaluateCondition">
+            <mxswa:ActivityReference.Arguments>
+              <InArgument x:TypeArguments="mxsq:ConditionOperator" x:Key="ConditionOperator">Equal</InArgument>
+              <InArgument x:TypeArguments="s:Object[]" x:Key="Parameters">[New Object() { ConditionBranchStep45_2 }]</InArgument>
+              <InArgument x:TypeArguments="x:Object" x:Key="Operand">[ConditionBranchStep45_1]</InArgument>
+              <OutArgument x:TypeArguments="x:Boolean" x:Key="Result">[ConditionBranchStep45_condition]</OutArgument>
+            </mxswa:ActivityReference.Arguments>
+          </mxswa:ActivityReference>
+          <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.ConditionBranch, Microsoft.Crm.Workflow, Version=8.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="ConditionBranchStep45">
+            <mxswa:ActivityReference.Arguments>
+              <InArgument x:TypeArguments="x:Boolean" x:Key="Condition">[ConditionBranchStep45_condition]</InArgument>
+            </mxswa:ActivityReference.Arguments>
+            <mxswa:ActivityReference.Properties>
+              <mxswa:ActivityReference x:Key="Then" AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.Composite, Microsoft.Crm.Workflow, Version=8.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="ConditionBranchStep45">
+                <mxswa:ActivityReference.Properties>
+                  <sco:Collection x:TypeArguments="Variable" x:Key="Variables" />
+                  <sco:Collection x:TypeArguments="Activity" x:Key="Activities">
+                    <Sequence DisplayName="SetVisibilityStep47">
+                      <mcwc:SetVisibility ControlId="mctools_boolvalue" ControlType="standard" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="mctools_parameter" IsVisible="False" />
+                    </Sequence>
+                    <Sequence DisplayName="SetVisibilityStep48">
+                      <mcwc:SetVisibility ControlId="mctools_datevalue" ControlType="standard" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="mctools_parameter" IsVisible="False" />
+                    </Sequence>
+                    <Sequence DisplayName="SetVisibilityStep49">
+                      <mcwc:SetVisibility ControlId="mctools_decimalvalue" ControlType="standard" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="mctools_parameter" IsVisible="False" />
+                    </Sequence>
+                    <Sequence DisplayName="SetVisibilityStep50">
+                      <mcwc:SetVisibility ControlId="mctools_floatvalue" ControlType="standard" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="mctools_parameter" IsVisible="True" />
+                    </Sequence>
+                    <Sequence DisplayName="SetVisibilityStep51">
+                      <mcwc:SetVisibility ControlId="mctools_memovalue" ControlType="standard" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="mctools_parameter" IsVisible="False" />
+                    </Sequence>
+                    <Sequence DisplayName="SetVisibilityStep52">
+                      <mcwc:SetVisibility ControlId="mctools_textvalue" ControlType="standard" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="mctools_parameter" IsVisible="False" />
+                    </Sequence>
+                  </sco:Collection>
+                </mxswa:ActivityReference.Properties>
+              </mxswa:ActivityReference>
+              <x:Null x:Key="Else" />
+            </mxswa:ActivityReference.Properties>
+          </mxswa:ActivityReference>
+          <mxswa:GetEntityProperty Attribute="mctools_valuetype" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="mctools_parameter" Value="[ConditionBranchStep46_1]">
+            <mxswa:GetEntityProperty.TargetType>
+              <InArgument x:TypeArguments="s:Type">
+                <mxswa:ReferenceLiteral x:TypeArguments="s:Type">
+                  <x:Null />
+                </mxswa:ReferenceLiteral>
+              </InArgument>
+            </mxswa:GetEntityProperty.TargetType>
+          </mxswa:GetEntityProperty>
+          <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.EvaluateExpression, Microsoft.Crm.Workflow, Version=8.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="EvaluateExpression">
+            <mxswa:ActivityReference.Arguments>
+              <InArgument x:TypeArguments="x:String" x:Key="ExpressionOperator">CreateCrmType</InArgument>
+              <InArgument x:TypeArguments="s:Object[]" x:Key="Parameters">[New Object() { Microsoft.Xrm.Sdk.Workflow.WorkflowPropertyType.OptionSetValue, "7", "Picklist" }]</InArgument>
+              <InArgument x:TypeArguments="s:Type" x:Key="TargetType">
+                <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="mxs:OptionSetValue" />
+              </InArgument>
+              <OutArgument x:TypeArguments="x:Object" x:Key="Result">[ConditionBranchStep46_2]</OutArgument>
+            </mxswa:ActivityReference.Arguments>
+          </mxswa:ActivityReference>
+          <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.EvaluateCondition, Microsoft.Crm.Workflow, Version=8.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="EvaluateCondition">
+            <mxswa:ActivityReference.Arguments>
+              <InArgument x:TypeArguments="mxsq:ConditionOperator" x:Key="ConditionOperator">Equal</InArgument>
+              <InArgument x:TypeArguments="s:Object[]" x:Key="Parameters">[New Object() { ConditionBranchStep46_2 }]</InArgument>
+              <InArgument x:TypeArguments="x:Object" x:Key="Operand">[ConditionBranchStep46_1]</InArgument>
+              <OutArgument x:TypeArguments="x:Boolean" x:Key="Result">[ConditionBranchStep46_condition]</OutArgument>
+            </mxswa:ActivityReference.Arguments>
+          </mxswa:ActivityReference>
+          <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.ConditionBranch, Microsoft.Crm.Workflow, Version=8.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="ConditionBranchStep46">
+            <mxswa:ActivityReference.Arguments>
+              <InArgument x:TypeArguments="x:Boolean" x:Key="Condition">[ConditionBranchStep46_condition]</InArgument>
+            </mxswa:ActivityReference.Arguments>
+            <mxswa:ActivityReference.Properties>
+              <mxswa:ActivityReference x:Key="Then" AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.Composite, Microsoft.Crm.Workflow, Version=8.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="ConditionBranchStep46">
+                <mxswa:ActivityReference.Properties>
+                  <sco:Collection x:TypeArguments="Variable" x:Key="Variables" />
+                  <sco:Collection x:TypeArguments="Activity" x:Key="Activities">
+                    <Sequence DisplayName="SetVisibilityStep53">
+                      <mcwc:SetVisibility ControlId="mctools_boolvalue" ControlType="standard" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="mctools_parameter" IsVisible="False" />
+                    </Sequence>
+                    <Sequence DisplayName="SetVisibilityStep54">
+                      <mcwc:SetVisibility ControlId="mctools_datevalue" ControlType="standard" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="mctools_parameter" IsVisible="True" />
+                    </Sequence>
+                    <Sequence DisplayName="SetVisibilityStep55">
+                      <mcwc:SetVisibility ControlId="mctools_decimalvalue" ControlType="standard" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="mctools_parameter" IsVisible="False" />
+                    </Sequence>
+                    <Sequence DisplayName="SetVisibilityStep56">
+                      <mcwc:SetVisibility ControlId="mctools_integervalue" ControlType="standard" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="mctools_parameter" IsVisible="False" />
+                    </Sequence>
+                    <Sequence DisplayName="SetVisibilityStep57">
+                      <mcwc:SetVisibility ControlId="mctools_floatvalue" ControlType="standard" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="mctools_parameter" IsVisible="False" />
+                    </Sequence>
+                    <Sequence DisplayName="SetVisibilityStep58">
+                      <mcwc:SetVisibility ControlId="mctools_memovalue" ControlType="standard" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="mctools_parameter" IsVisible="False" />
+                    </Sequence>
+                    <Sequence DisplayName="SetVisibilityStep59">
+                      <mcwc:SetVisibility ControlId="mctools_textvalue" ControlType="standard" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="mctools_parameter" IsVisible="False" />
+                    </Sequence>
+                  </sco:Collection>
+                </mxswa:ActivityReference.Properties>
+              </mxswa:ActivityReference>
+              <x:Null x:Key="Else" />
+            </mxswa:ActivityReference.Properties>
+          </mxswa:ActivityReference>
+        </sco:Collection>
+      </mxswa:ActivityReference.Properties>
+    </mxswa:ActivityReference>
+  </mxswa:Workflow>
+</Activity>

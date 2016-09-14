@@ -5,10 +5,10 @@
   <isquickfindquery>0</isquickfindquery>
   <isprivate>0</isprivate>
   <isdefault>1</isdefault>
-  <returnedtypecode>10006</returnedtypecode>
+  <returnedtypecode>10019</returnedtypecode>
   <savedqueryid>{064dc7fb-b051-4702-9ec0-b268bb458b2c}</savedqueryid>
   <layoutxml>
-    <grid name="" object="10006" jump="mctools_name" select="1" icon="1" preview="1">
+    <grid name="" object="10019" jump="mctools_name" select="1" icon="1" preview="1">
       <row name="mctools_parametercategory" id="mctools_parametercategoryid">
         <cell name="mctools_name" width="300" />
         <cell name="createdon" width="125" />

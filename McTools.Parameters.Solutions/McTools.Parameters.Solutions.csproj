@@ -84,6 +84,7 @@
     <Content Include="Managed\WebResources\mctools_\Pages\style.css.data.xml" />
     <Content Include="Managed\WebResources\mctools_\Scripts\configuration.js.data.xml" />
     <Content Include="Managed\WebResources\mctools_\Scripts\Parameter.js.data.xml" />
+    <Content Include="Managed\Workflows\Displayfieldsbytype-28ABF1A1-FD74-E611-80F0-00155DC99304.xaml.data.xml" />
     <Content Include="Unmanaged\Entities\mctools_parametercategory\Entity.xml" />
     <Content Include="Unmanaged\Entities\mctools_parametercategory\FormXml\main\{206c6df3-1753-42d2-b224-60ed880b339b}.xml" />
     <Content Include="Unmanaged\Entities\mctools_parametercategory\FormXml\mobile\{3fb36b49-1563-48c4-921d-42e204ac774f}.xml" />
@@ -126,6 +127,16 @@
     <Content Include="Unmanaged\WebResources\mctools_\Pages\style.css.data.xml" />
     <Content Include="Unmanaged\WebResources\mctools_\Scripts\configuration.js.data.xml" />
     <Content Include="Unmanaged\WebResources\mctools_\Scripts\Parameter.js.data.xml" />
+    <Content Include="Unmanaged\Workflows\Displayfieldsbytype-28ABF1A1-FD74-E611-80F0-00155DC99304.xaml.data.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <XamlAppDef Include="Managed\Workflows\Displayfieldsbytype-28ABF1A1-FD74-E611-80F0-00155DC99304.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </XamlAppDef>
+    <Page Include="Unmanaged\Workflows\Displayfieldsbytype-28ABF1A1-FD74-E611-80F0-00155DC99304.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

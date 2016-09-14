@@ -61,9 +61,9 @@
                       <control id="mctools_description" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="mctools_description" disabled="false" />
                     </cell>
                   </row>
-                  <row></row>
-                  <row></row>
-                  <row></row>
+                  <row />
+                  <row />
+                  <row />
                 </rows>
               </section>
               <section name="{21154619-ab4e-4771-88b1-046955cb2709}_section_2" showlabel="true" showbar="true" locklevel="0" id="{49402680-143a-cece-168b-16751d1450b5}" IsUserDefined="0" layout="varwidth" columns="11" labelwidth="115" celllabelalignment="Left" celllabelposition="Left">
@@ -78,7 +78,7 @@
                         <label description="Type de valeur" languagecode="1036" />
                         <label description="Value type" languagecode="1033" />
                       </labels>
-                      <control id="mctools_valuetype" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="mctools_valuetype" disabled="false" />
+                      <control id="mctools_valuetype" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="mctools_valuetype" disabled="false" uniqueid="{9e4be2a1-be69-71dd-ccd1-808671ba7495}" />
                     </cell>
                     <cell id="{b27738ec-d557-ad94-82b1-1ea623082261}" showlabel="true" locklevel="0" visible="false">
                       <labels>
@@ -97,12 +97,12 @@
                 </labels>
                 <rows>
                   <row>
-                    <cell id="{d7ad627b-6191-a324-d2bc-d3da2d254b16}" showlabel="true" locklevel="0" colspan="2">
+                    <cell id="{d7ad627b-6191-a324-d2bc-d3da2d254b16}" showlabel="true" locklevel="0" colspan="2" visible="false">
                       <labels>
                         <label description="Valeur" languagecode="1036" />
                         <label description="Value" languagecode="1033" />
                       </labels>
-                      <control id="mctools_textvalue" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="mctools_textvalue" disabled="false" />
+                      <control id="mctools_textvalue" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="mctools_textvalue" disabled="false" uniqueid="{9a69129b-23b5-b55a-24b6-ac6a4089e466}" />
                     </cell>
                   </row>
                 </rows>
@@ -114,19 +114,19 @@
                 </labels>
                 <rows>
                   <row>
-                    <cell id="{627ada0d-3709-3c69-3196-7304c685c694}" showlabel="true" locklevel="0" colspan="2" rowspan="6">
+                    <cell id="{627ada0d-3709-3c69-3196-7304c685c694}" showlabel="true" locklevel="0" colspan="2" rowspan="6" visible="false">
                       <labels>
                         <label description="Valeur" languagecode="1036" />
                         <label description="Value" languagecode="1033" />
                       </labels>
-                      <control id="mctools_memovalue" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="mctools_memovalue" disabled="false" />
+                      <control id="mctools_memovalue" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="mctools_memovalue" disabled="false" uniqueid="{966235e7-27c6-0500-7cac-b34acb372384}" />
                     </cell>
                   </row>
-                  <row></row>
-                  <row></row>
-                  <row></row>
-                  <row></row>
-                  <row></row>
+                  <row />
+                  <row />
+                  <row />
+                  <row />
+                  <row />
                 </rows>
               </section>
               <section name="{21154619-ab4e-4771-88b1-046955cb2709}_section_5" showlabel="false" showbar="false" locklevel="0" id="{c106bd71-0e6c-542b-8747-1e399407832d}" IsUserDefined="0" layout="varwidth" columns="11" labelwidth="115" celllabelalignment="Left" celllabelposition="Left" visible="false">
@@ -136,12 +136,12 @@
                 </labels>
                 <rows>
                   <row>
-                    <cell id="{c6b5bae0-479c-7a5a-ea63-b055887a284d}" showlabel="true" locklevel="0">
+                    <cell id="{c6b5bae0-479c-7a5a-ea63-b055887a284d}" showlabel="true" locklevel="0" visible="false">
                       <labels>
                         <label description="Valeur" languagecode="1036" />
                         <label description="Value" languagecode="1033" />
                       </labels>
-                      <control id="mctools_boolvalue" classid="{67FAC785-CD58-4f9f-ABB3-4B7DDC6ED5ED}" datafieldname="mctools_boolvalue" disabled="false" />
+                      <control id="mctools_boolvalue" classid="{67FAC785-CD58-4f9f-ABB3-4B7DDC6ED5ED}" datafieldname="mctools_boolvalue" disabled="false" uniqueid="{478d3db9-7c98-3e7c-6494-4e075e5cc4a6}" />
                     </cell>
                     <cell id="{e0e147e2-a150-26bb-2b14-557edc268d9c}" showlabel="false">
                       <labels>
@@ -158,12 +158,12 @@
                 </labels>
                 <rows>
                   <row>
-                    <cell id="{41c5275c-abeb-cd2e-2aca-d77483132bcb}" showlabel="true" locklevel="0">
+                    <cell id="{41c5275c-abeb-cd2e-2aca-d77483132bcb}" showlabel="true" locklevel="0" visible="false">
                       <labels>
                         <label description="Valeur" languagecode="1036" />
                         <label description="Value" languagecode="1033" />
                       </labels>
-                      <control id="mctools_integervalue" classid="{C6D124CA-7EDA-4a60-AEA9-7FB8D318B68F}" datafieldname="mctools_integervalue" disabled="false" />
+                      <control id="mctools_integervalue" classid="{C6D124CA-7EDA-4a60-AEA9-7FB8D318B68F}" datafieldname="mctools_integervalue" disabled="false" uniqueid="{1240b681-dc07-2bcc-8e3c-96ddde966a5d}" />
                     </cell>
                     <cell id="{8d1145da-1383-3191-7dab-9c905a537525}" showlabel="false">
                       <labels>
@@ -180,12 +180,12 @@
                 </labels>
                 <rows>
                   <row>
-                    <cell id="{a642405c-39b3-b11a-28b3-69e0b477b4de}" showlabel="true" locklevel="0">
+                    <cell id="{a642405c-39b3-b11a-28b3-69e0b477b4de}" showlabel="true" locklevel="0" visible="false">
                       <labels>
                         <label description="Valeur" languagecode="1036" />
                         <label description="Value" languagecode="1033" />
                       </labels>
-                      <control id="mctools_decimalvalue" classid="{C3EFE0C3-0EC6-42be-8349-CBD9079DFD8E}" datafieldname="mctools_decimalvalue" disabled="false" />
+                      <control id="mctools_decimalvalue" classid="{C3EFE0C3-0EC6-42be-8349-CBD9079DFD8E}" datafieldname="mctools_decimalvalue" disabled="false" uniqueid="{0d635c28-1d53-3c7a-3096-51409a49d4ce}" />
                     </cell>
                     <cell id="{e0bdce37-369a-34a1-b865-422e555bca9e}" showlabel="false">
                       <labels>
@@ -202,12 +202,12 @@
                 </labels>
                 <rows>
                   <row>
-                    <cell id="{760ba7be-74bd-ba5b-2487-ae1814714955}" showlabel="true" locklevel="0">
+                    <cell id="{760ba7be-74bd-ba5b-2487-ae1814714955}" showlabel="true" locklevel="0" visible="false">
                       <labels>
                         <label description="Valeur" languagecode="1036" />
                         <label description="Value" languagecode="1033" />
                       </labels>
-                      <control id="mctools_floatvalue" classid="{0D2C745A-E5A8-4c8f-BA63-C6D3BB604660}" datafieldname="mctools_floatvalue" disabled="false" />
+                      <control id="mctools_floatvalue" classid="{0D2C745A-E5A8-4c8f-BA63-C6D3BB604660}" datafieldname="mctools_floatvalue" disabled="false" uniqueid="{44390003-d2c7-0bd2-2442-314830e88a13}" />
                     </cell>
                     <cell id="{a6944cca-709b-5373-5555-4eae789cc6b5}" showlabel="false">
                       <labels>
@@ -224,12 +224,12 @@
                 </labels>
                 <rows>
                   <row>
-                    <cell id="{8b93abb3-291a-aac4-06d5-ded06495270c}" showlabel="true" locklevel="0">
+                    <cell id="{8b93abb3-291a-aac4-06d5-ded06495270c}" showlabel="true" locklevel="0" visible="false">
                       <labels>
                         <label description="Valeur" languagecode="1036" />
                         <label description="Value" languagecode="1033" />
                       </labels>
-                      <control id="mctools_datevalue" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="mctools_datevalue" disabled="false" />
+                      <control id="mctools_datevalue" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="mctools_datevalue" disabled="false" uniqueid="{5850c9e9-e901-ac6b-9519-732db6a0eb34}" />
                     </cell>
                     <cell id="{243cd602-c39c-5143-4175-77d6dd4dbba4}" showlabel="false">
                       <labels>
@@ -301,17 +301,13 @@
           <Handler handlerUniqueId="{b4ac249a-307b-8e35-94b1-43d6da13bd85}" functionName="loadForm" libraryName="mctools_/Scripts/Parameter.js" enabled="true" passExecutionContext="false" parameters="" />
         </Handlers>
       </event>
-      <event name="onchange" application="false" active="false" attribute="mctools_valuetype">
-        <Handlers>
-          <Handler handlerUniqueId="{527a1c28-3d23-4e51-299e-9c462c8087ae}" functionName="manageControlDisplay" libraryName="mctools_/Scripts/Parameter.js" enabled="true" passExecutionContext="false" parameters="" />
-        </Handlers>
-      </event>
       <event name="onchange" application="false" active="false" attribute="mctools_name">
         <Handlers>
           <Handler handlerUniqueId="{a4161734-5c49-dd4d-2692-26031d3a6586}" functionName="copyDisplayNameToLogicalName" libraryName="mctools_/Scripts/Parameter.js" enabled="true" passExecutionContext="false" parameters="" />
         </Handlers>
       </event>
     </events>
+    <controlDescriptions />
   </form>
   <IsCustomizable>1</IsCustomizable>
   <CanBeDeleted>1</CanBeDeleted>

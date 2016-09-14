@@ -15,23 +15,10 @@
     <ReferencingAttributeName>CreatedBy</ReferencingAttributeName>
     <RelationshipDescription>
       <Descriptions>
-        <Description description="Identificateur unique de l'utilisateur qui a créé l'enregistrement." languagecode="1036" />
         <Description description="" languagecode="1033" />
+        <Description description="Identificateur unique de l'utilisateur qui a créé l'enregistrement." languagecode="1036" />
       </Descriptions>
     </RelationshipDescription>
-    <field name="createdby" requiredlevel="none" imemode="auto" lookupstyle="single" lookupbrowse="0" format="">
-      <IsCustomizable>1</IsCustomizable>
-      <IsRenameable>1</IsRenameable>
-      <CanModifySearchSettings>1</CanModifySearchSettings>
-      <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
-      <IsSecured>0</IsSecured>
-      <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
-      <IsAuditEnabled>0</IsAuditEnabled>
-      <displaynames>
-        <displayname description="Créé par" languagecode="1036" />
-        <displayname description="Created by" languagecode="1033" />
-      </displaynames>
-    </field>
   </EntityRelationship>
   <EntityRelationship Name="lk_mctools_parameter_modifiedby">
     <EntityRelationshipType>OneToMany</EntityRelationshipType>
@@ -48,23 +35,10 @@
     <ReferencingAttributeName>ModifiedBy</ReferencingAttributeName>
     <RelationshipDescription>
       <Descriptions>
-        <Description description="Identificateur unique de l'utilisateur qui a modifié l'enregistrement." languagecode="1036" />
         <Description description="" languagecode="1033" />
+        <Description description="Identificateur unique de l'utilisateur qui a modifié l'enregistrement." languagecode="1036" />
       </Descriptions>
     </RelationshipDescription>
-    <field name="modifiedby" requiredlevel="none" imemode="auto" lookupstyle="single" lookupbrowse="0" format="">
-      <IsCustomizable>1</IsCustomizable>
-      <IsRenameable>1</IsRenameable>
-      <CanModifySearchSettings>1</CanModifySearchSettings>
-      <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
-      <IsSecured>0</IsSecured>
-      <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
-      <IsAuditEnabled>0</IsAuditEnabled>
-      <displaynames>
-        <displayname description="Modifié par" languagecode="1036" />
-        <displayname description="Modified by" languagecode="1033" />
-      </displaynames>
-    </field>
   </EntityRelationship>
   <EntityRelationship Name="lk_mctools_parametercategory_createdby">
     <EntityRelationshipType>OneToMany</EntityRelationshipType>
@@ -81,23 +55,10 @@
     <ReferencingAttributeName>CreatedBy</ReferencingAttributeName>
     <RelationshipDescription>
       <Descriptions>
-        <Description description="Identificateur unique de l'utilisateur qui a créé l'enregistrement." languagecode="1036" />
         <Description description="" languagecode="1033" />
+        <Description description="Identificateur unique de l'utilisateur qui a créé l'enregistrement." languagecode="1036" />
       </Descriptions>
     </RelationshipDescription>
-    <field name="createdby" requiredlevel="none" imemode="auto" lookupstyle="single" lookupbrowse="0" format="">
-      <IsCustomizable>1</IsCustomizable>
-      <IsRenameable>1</IsRenameable>
-      <CanModifySearchSettings>1</CanModifySearchSettings>
-      <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
-      <IsSecured>0</IsSecured>
-      <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
-      <IsAuditEnabled>0</IsAuditEnabled>
-      <displaynames>
-        <displayname description="Créé par" languagecode="1036" />
-        <displayname description="Created by" languagecode="1033" />
-      </displaynames>
-    </field>
   </EntityRelationship>
   <EntityRelationship Name="lk_mctools_parametercategory_modifiedby">
     <EntityRelationshipType>OneToMany</EntityRelationshipType>
@@ -114,22 +75,9 @@
     <ReferencingAttributeName>ModifiedBy</ReferencingAttributeName>
     <RelationshipDescription>
       <Descriptions>
-        <Description description="Identificateur unique de l'utilisateur qui a modifié l'enregistrement." languagecode="1036" />
         <Description description="" languagecode="1033" />
+        <Description description="Identificateur unique de l'utilisateur qui a modifié l'enregistrement." languagecode="1036" />
       </Descriptions>
     </RelationshipDescription>
-    <field name="modifiedby" requiredlevel="none" imemode="auto" lookupstyle="single" lookupbrowse="0" format="">
-      <IsCustomizable>1</IsCustomizable>
-      <IsRenameable>1</IsRenameable>
-      <CanModifySearchSettings>1</CanModifySearchSettings>
-      <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
-      <IsSecured>0</IsSecured>
-      <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
-      <IsAuditEnabled>0</IsAuditEnabled>
-      <displaynames>
-        <displayname description="Modifié par" languagecode="1036" />
-        <displayname description="Modified by" languagecode="1033" />
-      </displaynames>
-    </field>
   </EntityRelationship>
 </EntityRelationships>

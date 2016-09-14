@@ -1,0 +1,25 @@
+*{
+	font-family:Segoe UI;
+	font-size:11pt;
+}
+
+.header{
+	font-size:16pt;
+}
+
+.button{
+	background-image: url(/_imgs/theme/Outlook14Silver/ButtonNormalGradient.png);
+    background-color: #cee7ff;
+    background-repeat: repeat-x;
+    border: #666666 1px solid;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-left: 8px;
+    width: 300px;
+    height: 22px;
+    line-height: 18px;
+    font-family: Tahoma;
+    font-size: 11px;
+    cursor: pointer;
+    text-align: center;
+}
