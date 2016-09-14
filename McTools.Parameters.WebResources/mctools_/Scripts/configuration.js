@@ -12,7 +12,7 @@ function showDonation() {
 }
 
 function showProject() {
-    window.open("https://applicationparameters.codeplex.com");
+    window.open("https://github.com/MscrmTools/ApplicationParameters");
 }
 
 function loadLabels() {
@@ -27,7 +27,7 @@ function loadLabels() {
                 labels.push({ id: "showParameters", label: "Cliquez ici pour afficher la liste des param\350tres" });
                 labels.push({ id: "showBlog", label: "Cliquez ici pour afficher le blog MscrmTools" });
                 labels.push({ id: "showDonation", label: "Cliquez ici pour afficher la page de sponsoring" });
-                labels.push({ id: "showCodePlex", label: "Cliquez ici pour afficher le projet CodePlex de cette solution" });
+                labels.push({ id: "showCodePlex", label: "Cliquez ici pour afficher le projet Github de cette solution" });
             }
             break;
         default:
@@ -37,7 +37,7 @@ function loadLabels() {
                 labels.push({ id: "showParameters", label: "Click here to display parameters list" });
                 labels.push({ id: "showBlog", label: "Click here to display MscrmTools blog" });
                 labels.push({ id: "showDonation", label: "Click here to display sponsoring page" });
-                labels.push({ id: "showCodePlex", label: "Click here to display CodePlex project page for this solution" });
+                labels.push({ id: "showCodePlex", label: "Click here to display Github project page for this solution" });
             }
             break;
     }
