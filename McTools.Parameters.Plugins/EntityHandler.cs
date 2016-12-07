@@ -1,6 +1,8 @@
 ﻿using System;
 using McTools.Parameters.Plugins.AppCode;
 using Microsoft.Xrm.Sdk;
+using Microsoft.Xrm.Sdk.Messages;
+using Microsoft.Xrm.Sdk.Metadata;
 using Microsoft.Xrm.Sdk.Query;
 
 namespace McTools.Parameters.Plugins
@@ -39,7 +41,7 @@ namespace McTools.Parameters.Plugins
                                             throw new InvalidPluginExecutionException(
                                                 "Un paramètre avec ce nom existe déjà!");
 
-                                        CopyLocalToGlobal(inputData);
+                                        CopyLocalToGlobal(inputData, null, ps.GetIOrganizationService(true));
                                     }
                                     break;
                                 case PluginMessage.Update:
@@ -47,7 +49,7 @@ namespace McTools.Parameters.Plugins
                                         var inputData =  (Entity) ps.Context.InputParameters[PluginInputParameters.Target];
                                         var preImage = ps.Context.PreEntityImages["Image"];
 
-                                        CopyLocalToGlobal(inputData, preImage);
+                                        CopyLocalToGlobal(inputData, preImage, ps.GetIOrganizationService(true));
 
                                         if(inputData.Contains("mctools_valuetype"))
                                         {
@@ -76,8 +78,15 @@ namespace McTools.Parameters.Plugins
             return service.RetrieveMultiple(qba).Entities.Count > 0;
         }
 
-        private static void CopyLocalToGlobal(Entity inputData, Entity preImage = null)
+        private static void CopyLocalToGlobal(Entity inputData, Entity preImage, IOrganizationService service)
         {
+            var amd = ((RetrieveAttributeResponse) service.Execute(new RetrieveAttributeRequest
+            {
+                EntityLogicalName = "mctools_parameter",
+                LogicalName = "mctools_globalvalue"
+            })).AttributeMetadata as StringAttributeMetadata;
+
+
             var type = inputData.Contains("mctools_valuetype")
                 ? ((OptionSetValue) inputData["mctools_valuetype"]).Value
                 : ((OptionSetValue)preImage["mctools_valuetype"]).Value;
@@ -88,7 +97,15 @@ namespace McTools.Parameters.Plugins
                     inputData["mctools_globalvalue"] = inputData["mctools_textvalue"];
                     break;
                 case 2:
-                    inputData["mctools_globalvalue"] = inputData["mctools_memovalue"];
+                {
+                    string value = inputData.GetAttributeValue<string>("mctools_memovalue");
+                    if (value.Length > amd.MaxLength.Value)
+                    {
+                        value = value.Substring(0, amd.MaxLength.Value - 3);
+                        value += "...";
+                    }
+                    inputData["mctools_globalvalue"] = value;
+                }
                     break;
                 case 3:
                     inputData["mctools_globalvalue"] = (bool)inputData["mctools_boolvalue"] ? "Oui" : "Non";
