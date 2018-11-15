@@ -50,7 +50,7 @@
     <Content Include="mctools_\Pages\index.html" />
     <Content Include="mctools_\Pages\style.css" />
     <Content Include="mctools_\Scripts\configuration.js" />
-    <Content Include="mctools_\Scripts\Parameter.js" />
+    <Content Include="mctools_\Scripts\Form\Parameter.js" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

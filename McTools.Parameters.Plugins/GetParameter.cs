@@ -1,31 +1,40 @@
-﻿using System;
-using System.Linq;
-using System.Activities;
-using Microsoft.Xrm.Sdk;
+﻿using Microsoft.Xrm.Sdk;
 using Microsoft.Xrm.Sdk.Query;
 using Microsoft.Xrm.Sdk.Workflow;
+using System;
+using System.Activities;
+using System.Linq;
 
 namespace McTools.Parameters.Plugins
 {
     public sealed class GetParameter : CodeActivity
     {
+        [Output("Boolean value")]
+        public OutArgument<bool> BooleanValue { get; set; }
+
+        [Output("Date value")]
+        public OutArgument<DateTime> DateValue { get; set; }
+
+        [Output("Decimal value")]
+        public OutArgument<decimal> DecimalValue { get; set; }
+
+        [Output("File Base64 value")]
+        public OutArgument<string> FileBase64Value { get; set; }
+
+        [Output("Float value")]
+        public OutArgument<double> FloatValue { get; set; }
+
+        [Output("Integer value")]
+        public OutArgument<int> IntegerValue { get; set; }
+
         // Logical name of the parameter
         [Input("Logical name of the parameter")]
+        [RequiredArgument]
         public InArgument<string> LogicalName { get; set; }
 
         [Output("Text value")]
         public OutArgument<string> TextValue { get; set; }
-        [Output("Boolean value")]
-        public OutArgument<bool> BooleanValue { get; set; }
-        [Output("Date value")]
-        public OutArgument<DateTime> DateValue { get; set; }
-        [Output("Integer value")]
-        public OutArgument<int> IntegerValue { get; set; }
-        [Output("Decimal value")]
-        public OutArgument<decimal> DecimalValue { get; set; }
-        [Output("Float value")]
-        public OutArgument<double> FloatValue { get; set; }
-       
+
         protected override void Execute(CodeActivityContext executionContext)
         {
             var context = executionContext.GetExtension<IWorkflowContext>();
@@ -43,7 +52,6 @@ namespace McTools.Parameters.Plugins
                 },
                 ColumnSet = new ColumnSet(true)
             };
-
 
             var results = service.RetrieveMultiple(qe);
 
@@ -65,6 +73,27 @@ namespace McTools.Parameters.Plugins
             if (TextValue == null)
             {
                 executionContext.SetValue(TextValue, parameter.GetAttributeValue<string>("mctools_memovalue"));
+            }
+
+            if (parameter.GetAttributeValue<OptionSetValue>("mctools_valuetype").Value == 8) // File
+            {
+                var notes = service.RetrieveMultiple(new QueryExpression("annotation")
+                {
+                    ColumnSet = new ColumnSet("documentbody"),
+                    Criteria =
+                    {
+                        Conditions =
+                        {
+                            new ConditionExpression("regardingobjectid", ConditionOperator.Equal, parameter.Id)
+                        }
+                    },
+                    Orders =
+                    {
+                        new OrderExpression("createdon", OrderType.Descending)
+                    }
+                }).Entities;
+
+                executionContext.SetValue(FileBase64Value, notes.FirstOrDefault()?.GetAttributeValue<string>("documentbody"));
             }
         }
     }
